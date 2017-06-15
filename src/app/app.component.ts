@@ -11,7 +11,11 @@ import { SplashScreenPage } from '../pages/splash-screen/splash-screen';
   templateUrl: 'app.html'
 })
 export class MyApp {
+<<<<<<< HEAD
   rootPage:any = HomePage;
+=======
+  rootPage:any = LoginPage;
+>>>>>>> 58a465399d7a0f14263ef3757e8028d0fc7679e3
 
   constructor(platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen) {
     platform.ready().then(() => {
