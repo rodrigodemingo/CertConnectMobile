@@ -55815,7 +55815,7 @@ var SplashScreenPage = (function () {
 SplashScreenPage = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* IonicPage */])(),
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_5" /* Component */])({
-        selector: 'page-splash-screen',template:/*ion-inline-start:"E:\CERT Connect - JK\CertConnectMobile\src\pages\splash-screen\splash-screen.html"*/'<ion-content padding class="splash-screen">\n    <img src="assets/svg/CertConnectLogoSVG.svg" alt="imagenotavailable">\n</ion-content>'/*ion-inline-end:"E:\CERT Connect - JK\CertConnectMobile\src\pages\splash-screen\splash-screen.html"*/,
+        selector: 'page-splash-screen',template:/*ion-inline-start:"E:\CERT Connect - JK\CertConnectMobile\src\pages\splash-screen\splash-screen.html"*/''/*ion-inline-end:"E:\CERT Connect - JK\CertConnectMobile\src\pages\splash-screen\splash-screen.html"*/,
     }),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */]])
 ], SplashScreenPage);
@@ -74692,7 +74692,7 @@ LoginPage = __decorate([
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(31);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__ = __webpack_require__(103);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(102);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pages_splash_screen_splash_screen__ = __webpack_require__(98);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pages_home_home__ = __webpack_require__(197);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MyApp; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -74710,7 +74710,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 var MyApp = (function () {
     function MyApp(platform, statusBar, splashScreen) {
-        this.rootPage = __WEBPACK_IMPORTED_MODULE_4__pages_splash_screen_splash_screen__["a" /* SplashScreenPage */];
+        this.rootPage = __WEBPACK_IMPORTED_MODULE_4__pages_home_home__["a" /* HomePage */];
         platform.ready().then(function () {
             // Okay, so the platform is ready and our plugins are available.
             // Here you can do any higher level native things you might need.
@@ -74755,7 +74755,7 @@ var HomePage = (function () {
 }());
 HomePage = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_5" /* Component */])({
-        selector: 'page-home',template:/*ion-inline-start:"E:\CERT Connect - JK\CertConnectMobile\src\pages\home\home.html"*/'<ion-header>\n    <ion-navbar>\n        <ion-title>\n            Ionic Blank\n        </ion-title>\n    </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n    The world is your oyster.\n    <p>\n        If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.\n    </p>\n</ion-content>'/*ion-inline-end:"E:\CERT Connect - JK\CertConnectMobile\src\pages\home\home.html"*/
+        selector: 'page-home',template:/*ion-inline-start:"E:\CERT Connect - JK\CertConnectMobile\src\pages\home\home.html"*/'<ion-header>\n    <ion-navbar>\n        <ion-title>\n            Ionic Blank\n        </ion-title>\n    </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n    <ion-grid>\n        <ion-row>\n            <ion-col>\n                <div>1 of 4</div>\n            </ion-col>\n            <ion-col>\n                <div>2 of 4 <br>#</div>\n            </ion-col>\n            <ion-col>\n                <div>3 of 4 <br>#<br>#</div>\n            </ion-col>\n            <ion-col>\n                <div>4 of 4 <br>#<br>#<br>#</div>\n            </ion-col>\n        </ion-row>\n    </ion-grid>\n</ion-content>'/*ion-inline-end:"E:\CERT Connect - JK\CertConnectMobile\src\pages\home\home.html"*/
     }),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */]])
 ], HomePage);

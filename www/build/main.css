@@ -27459,10 +27459,3 @@ img {
   margin: 10px;
   width: 200px;
 }
-
-.splash-screen {
-  background-image: url("../svg/CertConnectLogoSVG.svg");
-  -webkit-background-image: url("../svg/CertConnectLogoSVG.svg");
-  background-repeat: no-repeat;
-  background-size: cover;
-}
