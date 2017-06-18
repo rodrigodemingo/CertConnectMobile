@@ -27455,7 +27455,26 @@ ion-navbar.toolbar {
   }
 }
 
-img {
+page-home .card-background-page ion-col {
+  padding: 1px;
+}
+
+page-home .card-background-page ion-card {
+  position: relative;
+  text-align: center;
+  color: #4B4B4B;
+  background-color: #fff;
+  box-shadow: none;
+  margin: 0;
+  padding: 50% 0;
+  width: 100%;
+}
+
+page-home .card-background-page ion-card:nth-child(odd) {
+  background: #E9EEF1;
+}
+
+page-login img {
   margin: 10px;
   width: 200px;
 }
