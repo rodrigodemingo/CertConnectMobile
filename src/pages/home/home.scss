@@ -2,12 +2,19 @@
         .grid {
             padding: 0;
         }
-        .holder {
-            padding: 20px 0;
-            border-radius: 4px;
-            text-align: center;
+        .grid button.button-clear {
+            height: inherit;
+            width: inherit;
+            padding: 0;
         }
-        .btn {
+        ion-col.col {
+            background-color: #fff;
+            padding: 0;
+        }
+        ion-col.box-gray.col {
+            background-color: #e9eef1;
+        }
+        .box {
             width: 10rem;
             padding: 1rem;
             position: relative;
@@ -25,17 +32,13 @@
             padding: 9px 8px;
             border-radius: 15px;
         }
-        .card-icon {
+        .box-icon {
             height: 2.5rem;
         }
-        ion-col.col {
-            background-color: #fff;
-            padding: 0;
-        }
-        ion-col.bg-gray.col {
-            background-color: #e9eef1;
-        }
-        .card-subtitle {
+        .box-subtitle {
             margin-top: 1rem;
+        }
+        ion-grid button {
+            height: 12rem;
         }
     }

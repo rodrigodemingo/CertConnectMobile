@@ -27459,13 +27459,22 @@ page-home .grid {
   padding: 0;
 }
 
-page-home .holder {
-  padding: 20px 0;
-  border-radius: 4px;
-  text-align: center;
+page-home .grid button.button-clear {
+  height: inherit;
+  width: inherit;
+  padding: 0;
 }
 
-page-home .btn {
+page-home ion-col.col {
+  background-color: #fff;
+  padding: 0;
+}
+
+page-home ion-col.box-gray.col {
+  background-color: #e9eef1;
+}
+
+page-home .box {
   width: 10rem;
   padding: 1rem;
   position: relative;
@@ -27485,21 +27494,16 @@ page-home .badge {
   border-radius: 15px;
 }
 
-page-home .card-icon {
+page-home .box-icon {
   height: 2.5rem;
 }
 
-page-home ion-col.col {
-  background-color: #fff;
-  padding: 0;
-}
-
-page-home ion-col.bg-gray.col {
-  background-color: #e9eef1;
-}
-
-page-home .card-subtitle {
+page-home .box-subtitle {
   margin-top: 1rem;
+}
+
+page-home ion-grid button {
+  height: 12rem;
 }
 
 page-login img {
