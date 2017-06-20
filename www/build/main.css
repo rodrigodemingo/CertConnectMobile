@@ -27465,6 +27465,10 @@ page-home .grid button.button-clear {
   padding: 0;
 }
 
+page-home ion-grid button {
+  height: 12rem;
+}
+
 page-home ion-col.col {
   background-color: #fff;
   padding: 0;
@@ -27499,11 +27503,10 @@ page-home .box-icon {
 }
 
 page-home .box-subtitle {
-  margin-top: 1rem;
-}
-
-page-home ion-grid button {
-  height: 12rem;
+  margin-top: 1.5rem;
+  font-family: sans-serif;
+  text-transform: none;
+  font-style: normal;
 }
 
 page-login img {
