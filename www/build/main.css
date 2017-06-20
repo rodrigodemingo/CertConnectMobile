@@ -27455,26 +27455,54 @@ ion-navbar.toolbar {
   }
 }
 
-page-home .card-background-page ion-col {
-  padding: 1px;
+page-home .grid {
+  padding: 0;
 }
 
-page-home .card-background-page ion-card {
+page-home .holder {
+  padding: 20px 0;
+  border-radius: 4px;
+  text-align: center;
+}
+
+page-home .btn {
+  width: 10rem;
+  padding: 1rem;
   position: relative;
   text-align: center;
-  color: #4B4B4B;
-  background-color: #fff;
-  box-shadow: none;
-  margin: 0;
-  padding: 50% 0;
-  width: 100%;
+  display: block;
+  margin: 6rem auto;
 }
 
-page-home .card-background-page ion-card:nth-child(odd) {
-  background: #E9EEF1;
+page-home .badge {
+  background: #28B5F4;
+  color: white;
+  font-size: 12px;
+  position: absolute;
+  top: -20px;
+  right: 10px;
+  padding: 9px 8px;
+  border-radius: 15px;
+}
+
+page-home .card-icon {
+  height: 2.5rem;
+}
+
+page-home ion-col.col {
+  background-color: #fff;
+  padding: 0;
+}
+
+page-home ion-col.bg-gray.col {
+  background-color: #e9eef1;
+}
+
+page-home .card-subtitle {
+  margin-top: 1rem;
 }
 
 page-login img {
   margin: 10px;
-  width: 200px;
+  width: 20rem;
 }
