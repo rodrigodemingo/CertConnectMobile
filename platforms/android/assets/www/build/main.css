@@ -27455,7 +27455,61 @@ ion-navbar.toolbar {
   }
 }
 
-img {
+page-home .grid {
+  padding: 0;
+}
+
+page-home .grid button.button-clear {
+  height: inherit;
+  width: inherit;
+  padding: 0;
+}
+
+page-home ion-grid button {
+  height: 12rem;
+}
+
+page-home ion-col.col {
+  background-color: #fff;
+  padding: 0;
+}
+
+page-home ion-col.box-gray.col {
+  background-color: #e9eef1;
+}
+
+page-home .box {
+  width: 10rem;
+  padding: 1rem;
+  position: relative;
+  text-align: center;
+  display: block;
+  margin: 6rem auto;
+}
+
+page-home .badge {
+  background: #28B5F4;
+  color: white;
+  font-size: 12px;
+  position: absolute;
+  top: -20px;
+  right: 10px;
+  padding: 9px 8px;
+  border-radius: 15px;
+}
+
+page-home .box-icon {
+  height: 2.5rem;
+}
+
+page-home .box-subtitle {
+  margin-top: 1.5rem;
+  font-family: sans-serif;
+  text-transform: none;
+  font-style: normal;
+}
+
+page-login img {
   margin: 10px;
-  width: 200px;
+  width: 20rem;
 }
