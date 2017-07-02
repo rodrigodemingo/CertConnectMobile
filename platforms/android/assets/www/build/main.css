@@ -27510,9 +27510,10 @@ page-home .box-subtitle {
 }
 
 page-home ion-avatar img {
-  width: 10rem !important;
-  height: 10rem !important;
+  width: 90px !important;
+  height: 90px !important;
   margin-bottom: 2rem;
+  background-color: #fff;
 }
 
 page-home .bg-pattern {
