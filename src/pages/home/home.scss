@@ -44,4 +44,23 @@
             text-transform: none;
             font-style: normal;
         }
+        ion-avatar img {
+            width: 10rem !important;
+            height: 10rem !important;
+            margin-bottom: 2rem;
+        }
+        .bg-pattern {
+            background-image: url(../assets/img/pattern_bg.png);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center;
+            background-size: cover;
+        }
+        .bg-pattern,
+        .bg-pattern p {
+            color: #fff;
+        }
+        .item-md.item-block .item-inner {
+            border: none;
+        }
     }
