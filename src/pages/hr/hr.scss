@@ -1,0 +1,60 @@
+page-hr {
+    .grid {
+        padding: 0;
+    }
+    .grid button.button-clear {
+        height: inherit;
+        width: inherit;
+        padding: 0;
+    }
+    ion-grid button {
+        height: 12rem;
+    }
+    ion-col.col {
+        background-color: #fff;
+        padding: 0;
+    }
+    ion-col.box-gray.col {
+        background-color: #e9eef1;
+    }
+    .box {
+        padding: 2rem 0;
+    }
+    .badge {
+        background: #28B5F4;
+        color: white;
+        font-size: 12px;
+        position: absolute;
+        top: -20px;
+        right: 10px;
+        padding: 9px 8px;
+        border-radius: 15px;
+    }
+    .circle {
+        border-radius: 50%;
+        width: 8rem;
+        height: 8rem;
+        background-color: #F1F5F7;
+        margin: 0 auto;
+    }
+    .box-icon {
+        width: 3rem;
+        height: 3rem;
+    }
+    .box-subtitle {
+        margin-top: 1.5rem;
+        font-family: sans-serif;
+        text-transform: none;
+        font-style: normal;
+    }
+    .box img {
+        color: #4B4B4B;
+        -webkit-text-fill-color: currentColor;
+        fill: currentColor;
+        position: relative;
+        top: 22px;
+    }
+    .item-md.item-block .item-inner {
+        border: none;
+    }
+}
