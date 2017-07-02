@@ -27509,6 +27509,29 @@ page-home .box-subtitle {
   font-style: normal;
 }
 
+page-home ion-avatar img {
+  width: 10rem !important;
+  height: 10rem !important;
+  margin-bottom: 2rem;
+}
+
+page-home .bg-pattern {
+  background-image: url(../assets/img/pattern_bg.png);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
+
+page-home .bg-pattern,
+page-home .bg-pattern p {
+  color: #fff;
+}
+
+page-home .item-md.item-block .item-inner {
+  border: none;
+}
+
 page-login img {
   margin: 10px;
   width: 20rem;
