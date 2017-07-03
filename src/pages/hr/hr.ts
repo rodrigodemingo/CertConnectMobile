@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-
+import {RegisterPage} from '../register/register';
 /**
  * Generated class for the HrPage page.
  *
@@ -20,5 +20,4 @@ export class HrPage {
   ionViewDidLoad() {
     console.log('ionViewDidLoad HrPage');
   }
-
 }

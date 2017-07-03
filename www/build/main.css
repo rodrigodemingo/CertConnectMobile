@@ -27496,6 +27496,7 @@ page-home .badge {
   right: 10px;
   padding: 9px 8px;
   border-radius: 15px;
+  display: none;
 }
 
 page-home .box-icon {
