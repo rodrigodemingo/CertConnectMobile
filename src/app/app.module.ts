@@ -21,7 +21,7 @@ import {HrPage} from '../pages/hr/hr';
   ],
   imports: [
     BrowserModule,
-    IonicModule.forRoot(MyApp)
+    IonicModule.forRoot(MyApp),
 
   ],
   bootstrap: [IonicApp],
