@@ -27580,6 +27580,15 @@ page-hr .circle {
   margin: 0 auto;
 }
 
+page-hr .circle:active {
+  background-color: #0085C1;
+}
+
+page-hr .circle img:active {
+  fill: #fff;
+  -webkit-text-fill-color: #fff;
+}
+
 page-hr .box-icon {
   width: 3rem;
   height: 3rem;
@@ -27597,7 +27606,7 @@ page-hr .box img {
   -webkit-text-fill-color: currentColor;
   fill: currentColor;
   position: relative;
-  top: 22px;
+  top: 25px;
 }
 
 page-hr .item-md.item-block .item-inner {
