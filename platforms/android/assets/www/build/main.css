@@ -27533,6 +27533,76 @@ page-home .item-md.item-block .item-inner {
   border: none;
 }
 
+page-hr .grid {
+  padding: 0;
+}
+
+page-hr .grid button.button-clear {
+  height: inherit;
+  width: inherit;
+  padding: 0;
+}
+
+page-hr ion-grid button {
+  height: 12rem;
+}
+
+page-hr ion-col.col {
+  background-color: #fff;
+  padding: 0;
+}
+
+page-hr ion-col.box-gray.col {
+  background-color: #e9eef1;
+}
+
+page-hr .box {
+  padding: 2rem 0;
+}
+
+page-hr .badge {
+  background: #28B5F4;
+  color: white;
+  font-size: 12px;
+  position: absolute;
+  top: -20px;
+  right: 10px;
+  padding: 9px 8px;
+  border-radius: 15px;
+}
+
+page-hr .circle {
+  border-radius: 50%;
+  width: 8rem;
+  height: 8rem;
+  background-color: #F1F5F7;
+  margin: 0 auto;
+}
+
+page-hr .box-icon {
+  width: 3rem;
+  height: 3rem;
+}
+
+page-hr .box-subtitle {
+  margin-top: 1.5rem;
+  font-family: sans-serif;
+  text-transform: none;
+  font-style: normal;
+}
+
+page-hr .box img {
+  color: #4B4B4B;
+  -webkit-text-fill-color: currentColor;
+  fill: currentColor;
+  position: relative;
+  top: 22px;
+}
+
+page-hr .item-md.item-block .item-inner {
+  border: none;
+}
+
 page-login img {
   margin: 10px;
   width: 20rem;
