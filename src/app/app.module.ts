@@ -9,6 +9,7 @@ import { LoginPage } from '../pages/login/login';
 import { SplashScreenPage } from '../pages/splash-screen/splash-screen';
 import {RegisterPage} from '../pages/register/register';
 import {HrPage} from '../pages/hr/hr';
+import {SalaryCertificatePage} from '../pages/salary-certificate/salary-certificate'
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import {HrPage} from '../pages/hr/hr';
     LoginPage,
     SplashScreenPage,
     RegisterPage,
-    HrPage
+    HrPage,
+    SalaryCertificatePage
   ],
   imports: [
     BrowserModule,
@@ -31,7 +33,8 @@ import {HrPage} from '../pages/hr/hr';
     LoginPage,
     SplashScreenPage,
     RegisterPage,
-    HrPage
+    HrPage,
+    SalaryCertificatePage
   ],
   providers: [
     StatusBar,

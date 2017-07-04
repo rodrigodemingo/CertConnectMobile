@@ -6,12 +6,13 @@ import { HomePage } from '../pages/home/home';
 import { LoginPage } from '../pages/login/login';
 import { SplashScreenPage } from '../pages/splash-screen/splash-screen';
 import { HrPage } from '../pages/hr/hr';
+import { SalaryCertificatePage } from '../pages/salary-certificate/salary-certificate'
 
 @Component({
   templateUrl: 'app.html'
 })
 export class MyApp {
-  rootPage:any = LoginPage;
+  rootPage:any = SalaryCertificatePage;
 
   constructor(platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen) {
     platform.ready().then(() => {
