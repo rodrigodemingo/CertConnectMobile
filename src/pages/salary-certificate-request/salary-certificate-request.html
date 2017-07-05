@@ -1,13 +1,40 @@
 <ion-header>
-
-  <ion-navbar>
-    <ion-title>Salary Certificate Request</ion-title>
-  </ion-navbar>
-
+    <ion-navbar>
+        <ion-title>Request Certificates</ion-title>
+    </ion-navbar>
 </ion-header>
 
-
 <ion-content padding>
-    <ion-title>Salary Certificate Request</ion-title>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam gravida venenatis tempus.</p>
+    <h5>Request Certificates</h5>
+    <p>Please select your choise:</p>
+    <form padding-top>
+        <ion-list radio-group>
+            <ion-item>
+                <ion-label>Salary Certificate</ion-label>
+                <ion-radio checked="true"></ion-radio>
+            </ion-item>
+            <ion-item>
+                <ion-label>Bank Loan</ion-label>
+                <ion-radio></ion-radio>
+            </ion-item>
+            <ion-item>
+                <ion-label>Salary transfer</ion-label>
+                <ion-radio></ion-radio>
+            </ion-item>
+            <ion-item>
+                <ion-label>Other Request</ion-label>
+                <ion-radio></ion-radio>
+            </ion-item>
+        </ion-list>
+    </form>
+    <h5 padding-top>Subject</h5>
+    <ion-list>
+        <ion-item>
+            <ion-input type="text" placeholder="Subject"></ion-input>
+        </ion-item>
+        <ion-item>
+            <ion-input type="text" placeholder="Comments"></ion-input>
+        </ion-item>
+    </ion-list>
+    <button padding ion-button block color="secondary">Submit</button>
 </ion-content>

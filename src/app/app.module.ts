@@ -9,7 +9,8 @@ import { LoginPage } from '../pages/login/login';
 import { SplashScreenPage } from '../pages/splash-screen/splash-screen';
 import {RegisterPage} from '../pages/register/register';
 import {HrPage} from '../pages/hr/hr';
-import {SalaryCertificatePage} from '../pages/salary-certificate/salary-certificate'
+import {SalaryCertificatePage} from '../pages/salary-certificate/salary-certificate';
+import {SalaryCertificateRequestPage} from '../pages/salary-certificate-request/salary-certificate-request';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import {SalaryCertificatePage} from '../pages/salary-certificate/salary-certific
     SplashScreenPage,
     RegisterPage,
     HrPage,
-    SalaryCertificatePage
+    SalaryCertificatePage,
+    SalaryCertificateRequestPage
   ],
   imports: [
     BrowserModule,
@@ -34,7 +36,8 @@ import {SalaryCertificatePage} from '../pages/salary-certificate/salary-certific
     SplashScreenPage,
     RegisterPage,
     HrPage,
-    SalaryCertificatePage
+    SalaryCertificatePage,
+    SalaryCertificateRequestPage
   ],
   providers: [
     StatusBar,

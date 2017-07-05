@@ -7,12 +7,13 @@ import { LoginPage } from '../pages/login/login';
 import { SplashScreenPage } from '../pages/splash-screen/splash-screen';
 import { HrPage } from '../pages/hr/hr';
 import { SalaryCertificatePage } from '../pages/salary-certificate/salary-certificate'
+import { SalaryCertificateRequestPage } from '../pages/salary-certificate-request/salary-certificate-request'
 
 @Component({
   templateUrl: 'app.html'
 })
 export class MyApp {
-  rootPage:any = SalaryCertificatePage;
+  rootPage:any = SalaryCertificateRequestPage;
 
   constructor(platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen) {
     platform.ready().then(() => {
