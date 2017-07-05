@@ -11,6 +11,7 @@ import {RegisterPage} from '../pages/register/register';
 import {HrPage} from '../pages/hr/hr';
 import {SalaryCertificatePage} from '../pages/salary-certificate/salary-certificate';
 import {SalaryCertificateRequestPage} from '../pages/salary-certificate-request/salary-certificate-request';
+import {OperationsPage} from '../pages/operations/operations';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import {SalaryCertificateRequestPage} from '../pages/salary-certificate-request/
     RegisterPage,
     HrPage,
     SalaryCertificatePage,
-    SalaryCertificateRequestPage
+    SalaryCertificateRequestPage,
+    OperationsPage
   ],
   imports: [
     BrowserModule,
@@ -37,7 +39,8 @@ import {SalaryCertificateRequestPage} from '../pages/salary-certificate-request/
     RegisterPage,
     HrPage,
     SalaryCertificatePage,
-    SalaryCertificateRequestPage
+    SalaryCertificateRequestPage,
+    OperationsPage
   ],
   providers: [
     StatusBar,

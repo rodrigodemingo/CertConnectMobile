@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import {RegisterPage} from '../register/register';
-import {SalaryCertificatePage} from '../salary-certificate/salary-certificate';
+import { SalaryCertificatePage } from '../salary-certificate/salary-certificate';
+
 @IonicPage()
 @Component({
   selector: 'page-hr',
@@ -15,7 +15,7 @@ export class HrPage {
   ionViewDidLoad() {
     console.log('ionViewDidLoad HrPage');
   }
-  salaryCertificate(){
+  salaryCertificate() {
     this.navCtrl.push(SalaryCertificatePage);
   }
 }
