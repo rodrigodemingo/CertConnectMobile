@@ -17,6 +17,6 @@
 ion-navbar .toolbar-background {
   background-color: map-get($colors, primary);
 }
-ion-navbar .toolbar-title {
+ion-navbar .toolbar-title, ion-navbar .button-inner {
   color: map-get($colors, light);
 }
