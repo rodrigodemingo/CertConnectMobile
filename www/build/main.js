@@ -55899,7 +55899,7 @@ var SalaryCertificatePage = (function () {
 SalaryCertificatePage = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* IonicPage */])(),
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_5" /* Component */])({
-        selector: 'page-salary-certificate',template:/*ion-inline-start:"E:\CERT Connect - JK\CertConnectMobile\src\pages\salary-certificate\salary-certificate.html"*/'<ion-header>\n    <ion-navbar color="primary">\n        <ion-title>Salary Certificate</ion-title>\n    </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n    <ion-title>Salary Certificate Request</ion-title>\n    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam gravida venenatis tempus.</p>\n    <ion-list>\n        <ion-list-header>\n            My Salary Certificates\n        </ion-list-header>\n        <ion-item>\n            <button ion-fab item-start color="secondary">\n              <ion-icon name="document"></ion-icon>\n            </button>\n            <h2 padding>Credit Card\n                <p>20th June 2017 - Approved</p>\n            </h2>\n            <ion-icon item-end name="checkmark" color="secondary"></ion-icon>\n        </ion-item>\n        <ion-item>\n            <button ion-fab item-start color="disable">\n              <ion-icon name="document"></ion-icon>\n            </button>\n            <h2 padding>Bank Loan\n                <p>20th June 2017 - Pending</p>\n            </h2>\n            <ion-icon item-end name="time" color="disable"></ion-icon>\n        </ion-item>\n        <ion-item>\n            <button ion-fab item-start color="disable">\n              <ion-icon name="document"></ion-icon>\n            </button>\n            <h2 padding>Bank Loan\n                <p>20th June 2017 - Pending</p>\n            </h2>\n            <ion-icon item-end name="time" color="disable"></ion-icon>\n        </ion-item>\n        <ion-item>\n            <button ion-fab item-start color="disable">\n              <ion-icon name="document"></ion-icon>\n            </button>\n            <h2 padding>Bank Loan\n                <p>20th June 2017 - Pending</p>\n            </h2>\n            <ion-icon item-end name="time" color="disable"></ion-icon>\n        </ion-item>\n        <ion-item>\n            <button ion-fab item-start color="disable">\n              <ion-icon name="document"></ion-icon>\n            </button>\n            <h2 padding>Bank Loan\n                <p>20th June 2017 - Pending</p>\n            </h2>\n            <ion-icon item-end name="time" color="disable"></ion-icon>\n        </ion-item>\n    </ion-list>\n</ion-content>\n<ion-fab right bottom margin>\n    <button ion-fab color="secondary"><ion-icon name="create"></ion-icon></button>\n</ion-fab>'/*ion-inline-end:"E:\CERT Connect - JK\CertConnectMobile\src\pages\salary-certificate\salary-certificate.html"*/,
+        selector: 'page-salary-certificate',template:/*ion-inline-start:"E:\CERT Connect - JK\CertConnectMobile\src\pages\salary-certificate\salary-certificate.html"*/'<ion-header>\n    <ion-navbar>\n        <ion-title>Salary Certificate</ion-title>\n    </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n    <ion-title>Salary Certificate List</ion-title>\n    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam gravida venenatis tempus.</p>\n    <ion-list>\n        <ion-list-header>\n            My Salary Certificates\n        </ion-list-header>\n        <ion-item>\n            <button ion-fab item-start color="secondary">\n              <ion-icon name="document"></ion-icon>\n            </button>\n            <h2 padding>Credit Card\n                <p>20th June 2017 - Approved</p>\n            </h2>\n            <ion-icon item-end name="checkmark" color="secondary"></ion-icon>\n        </ion-item>\n        <ion-item>\n            <button ion-fab item-start color="disable">\n              <ion-icon name="document"></ion-icon>\n            </button>\n            <h2 padding>Bank Loan\n                <p>20th June 2017 - Pending</p>\n            </h2>\n            <ion-icon item-end name="time" color="disable"></ion-icon>\n        </ion-item>\n        <ion-item>\n            <button ion-fab item-start color="disable">\n              <ion-icon name="document"></ion-icon>\n            </button>\n            <h2 padding>Bank Loan\n                <p>20th June 2017 - Pending</p>\n            </h2>\n            <ion-icon item-end name="time" color="disable"></ion-icon>\n        </ion-item>\n        <ion-item>\n            <button ion-fab item-start color="disable">\n              <ion-icon name="document"></ion-icon>\n            </button>\n            <h2 padding>Bank Loan\n                <p>20th June 2017 - Pending</p>\n            </h2>\n            <ion-icon item-end name="time" color="disable"></ion-icon>\n        </ion-item>\n        <ion-item>\n            <button ion-fab item-start color="disable">\n              <ion-icon name="document"></ion-icon>\n            </button>\n            <h2 padding>Bank Loan\n                <p>20th June 2017 - Pending</p>\n            </h2>\n            <ion-icon item-end name="time" color="disable"></ion-icon>\n        </ion-item>\n    </ion-list>\n</ion-content>\n<ion-fab right bottom margin>\n    <button ion-fab color="secondary"><ion-icon name="create"></ion-icon></button>\n</ion-fab>'/*ion-inline-end:"E:\CERT Connect - JK\CertConnectMobile\src\pages\salary-certificate\salary-certificate.html"*/,
     }),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */]])
 ], SalaryCertificatePage);
@@ -74485,23 +74485,27 @@ module.exports = g;
 var map = {
 	"../pages/hr/hr.module": [
 		265,
-		4
+		11
 	],
 	"../pages/login/login.module": [
 		266,
-		3
+		10
 	],
 	"../pages/register/register.module": [
 		267,
-		2
+		9
+	],
+	"../pages/salary-certificate-request/salary-certificate-request.module": [
+		270,
+		6
 	],
 	"../pages/salary-certificate/salary-certificate.module": [
 		268,
-		1
+		8
 	],
 	"../pages/splash-screen/splash-screen.module": [
 		269,
-		0
+		7
 	]
 };
 function webpackAsyncContext(req) {
@@ -74578,7 +74582,8 @@ AppModule = __decorate([
                     { loadChildren: '../pages/hr/hr.module#HrPageModule', name: 'HrPage', segment: 'hr', priority: 'low', defaultHistory: [] },
                     { loadChildren: '../pages/login/login.module#LoginPageModule', name: 'LoginPage', segment: 'login', priority: 'low', defaultHistory: [] },
                     { loadChildren: '../pages/splash-screen/splash-screen.module#SplashScreenPageModule', name: 'SplashScreenPage', segment: 'splash-screen', priority: 'low', defaultHistory: [] },
-                    { loadChildren: '../pages/salary-certificate/salary-certificate.module#SalaryCertificatePageModule', name: 'SalaryCertificatePage', segment: 'salary-certificate', priority: 'low', defaultHistory: [] }
+                    { loadChildren: '../pages/salary-certificate/salary-certificate.module#SalaryCertificatePageModule', name: 'SalaryCertificatePage', segment: 'salary-certificate', priority: 'low', defaultHistory: [] },
+                    { loadChildren: '../pages/salary-certificate-request/salary-certificate-request.module#SalaryCertificateRequestPageModule', name: 'SalaryCertificateRequestPage', segment: 'salary-certificate-request', priority: 'low', defaultHistory: [] }
                 ]
             }),
         ],

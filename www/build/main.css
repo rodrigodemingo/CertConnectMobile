@@ -53191,6 +53191,14 @@ ion-navbar.toolbar {
   }
 }
 
+ion-navbar .toolbar-background {
+  background-color: #28B5F4;
+}
+
+ion-navbar .toolbar-title {
+  color: #f4f4f4;
+}
+
 page-home .grid {
   padding: 0;
 }
