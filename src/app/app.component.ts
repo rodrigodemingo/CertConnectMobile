@@ -14,7 +14,7 @@ import {OperationsPage} from '../pages/operations/operations';
   templateUrl: 'app.html'
 })
 export class MyApp {
-  rootPage:any = OperationsPage;
+  rootPage:any = LoginPage;
 
   constructor(platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen) {
     platform.ready().then(() => {
