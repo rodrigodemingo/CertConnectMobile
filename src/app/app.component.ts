@@ -13,7 +13,7 @@ import { SalaryCertificateRequestPage } from '../pages/salary-certificate-reques
   templateUrl: 'app.html'
 })
 export class MyApp {
-  rootPage:any = SalaryCertificateRequestPage;
+  rootPage:any = LoginPage;
 
   constructor(platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen) {
     platform.ready().then(() => {

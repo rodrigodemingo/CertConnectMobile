@@ -55784,6 +55784,7 @@ exports.isFunction = isFunction;
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(20);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__salary_certificate_salary_certificate__ = __webpack_require__(100);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return HrPage; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -55796,6 +55797,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 
 
+
 var HrPage = (function () {
     function HrPage(navCtrl, navParams) {
         this.navCtrl = navCtrl;
@@ -55804,16 +55806,20 @@ var HrPage = (function () {
     HrPage.prototype.ionViewDidLoad = function () {
         console.log('ionViewDidLoad HrPage');
     };
+    HrPage.prototype.salaryCertificate = function () {
+        this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_2__salary_certificate_salary_certificate__["a" /* SalaryCertificatePage */]);
+    };
     return HrPage;
 }());
 HrPage = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* IonicPage */])(),
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_5" /* Component */])({
-        selector: 'page-hr',template:/*ion-inline-start:"E:\CERT Connect - JK\CertConnectMobile\src\pages\hr\hr.html"*/'<ion-header>\n\n    <ion-navbar>\n        <ion-title>HR Department</ion-title>\n    </ion-navbar>\n\n</ion-header>\n\n<ion-content>\n    <ion-grid>\n        <ion-row>\n            <ion-col>\n                <button ion-button clear color="dark">\n                    <div class="box">\n                      <!--<ion-badge>02</ion-badge>-->\n                      <div class="circle">\n                      <img src="assets/svg/HR_Holidays.svg" class="box-icon">\n                      </div>\n                      <div class="box-subtitle">Holidays</div>\n                    </div>\n                </button>\n            </ion-col>\n            <ion-col>\n                <button ion-button clear color="dark">\n                <div class="box">\n                    <!--<ion-badge>02</ion-badge>-->\n                    <div class="circle">\n                    <img src="assets/svg/HR_SalaryCertificate.svg" class="box-icon">\n                    </div>\n                    <div class="box-subtitle">Salary Certificate</div>\n                </div>\n                </button>\n            </ion-col>\n            <ion-col>\n                <button ion-button clear color="dark">\n                <div class="box">\n                    <!--<ion-badge>02</ion-badge>-->\n                    <div class="circle">\n                    <img src="assets/svg/HR_Leave_Request.svg" class="box-icon">\n                    </div>\n                    <div class="box-subtitle">Leave Request</div>\n                </div>\n                </button>\n            </ion-col>\n        </ion-row>\n        <ion-row>\n            <ion-col>\n                <button ion-button clear color="dark">\n                <div class="box">\n                    <!--<ion-badge>02</ion-badge>-->\n                    <div class="circle">\n                    <img src="assets/svg/HR_Enquiries.svg" class="box-icon">\n                    </div>\n                    <div class="box-subtitle">Enquiries</div>\n                </div>\n                </button>\n            </ion-col>\n            <ion-col>\n                <button ion-button clear color="dark">\n                <div class="box">\n                    <!--<ion-badge>02</ion-badge>-->\n                    <div class="circle">\n                    <img src="assets/svg/HR_Emergency.svg" class="box-icon">\n                    </div>\n                    <div class="box-subtitle">Emergency</div>\n                </div>\n                </button>\n            </ion-col>\n            <ion-col>\n                <button ion-button clear color="dark">\n                <div class="box">\n                    <!--<ion-badge>02</ion-badge>-->\n                    <div class="circle">\n                    <img src="assets/svg/HR_Sick_Leave.svg" class="box-icon">\n                    </div>\n                    <div class="box-subtitle">Sick Leave</div>\n                </div>\n                </button>\n            </ion-col>\n        </ion-row>\n        <ion-row>\n            <ion-col>\n                <button ion-button clear color="dark">\n                <div class="box">\n                    <!--<ion-badge>02</ion-badge>-->\n                    <div class="circle">\n                    <img src="assets/svg/HR_NOC.svg" class="box-icon">\n                    </div>\n                    <div class="box-subtitle">N.O.C.</div>\n                </div>\n                </button>\n            </ion-col>\n            <ion-col>\n                <button ion-button clear color="dark">\n                <div class="box">\n                    <!--<ion-badge>02</ion-badge>-->\n                    <div class="circle">\n                    <img src="assets/svg/HR_Passport.svg" class="box-icon">\n                    </div>\n                    <div class="box-subtitle">Passport</div>\n                </div>\n                </button>\n            </ion-col>\n            <ion-col>\n                <button ion-button clear color="dark">\n                <div class="box">\n                    <!--<ion-badge>02</ion-badge>-->\n                    <div class="circle">\n                    <img src="assets/svg/HR_Accomodation.svg" class="box-icon">\n                    </div>\n                    <div class="box-subtitle">Accommodation</div>\n                </div>\n                </button>\n            </ion-col>\n        </ion-row>\n    </ion-grid>\n</ion-content>'/*ion-inline-end:"E:\CERT Connect - JK\CertConnectMobile\src\pages\hr\hr.html"*/,
+        selector: 'page-hr',template:/*ion-inline-start:"E:\CERT Connect - JK\CertConnectMobile\src\pages\hr\hr.html"*/'<ion-header>\n\n    <ion-navbar>\n        <ion-title>HR Department</ion-title>\n    </ion-navbar>\n\n</ion-header>\n\n<ion-content>\n    <ion-grid>\n        <ion-row>\n            <ion-col>\n                <button ion-button clear color="dark">\n                    <div class="box">\n                      <!--<ion-badge>02</ion-badge>-->\n                      <div class="circle">\n                      <img src="assets/svg/HR_Holidays.svg" class="box-icon">\n                      </div>\n                      <div class="box-subtitle">Holidays</div>\n                    </div>\n                </button>\n            </ion-col>\n            <ion-col>\n                <button ion-button clear color="dark" (click)="salaryCertificate();">\n                <div class="box">\n                    <!--<ion-badge>02</ion-badge>-->\n                    <div class="circle">\n                    <img src="assets/svg/HR_SalaryCertificate.svg" class="box-icon">\n                    </div>\n                    <div class="box-subtitle">Salary Certificate</div>\n                </div>\n                </button>\n            </ion-col>\n            <ion-col>\n                <button ion-button clear color="dark">\n                <div class="box">\n                    <!--<ion-badge>02</ion-badge>-->\n                    <div class="circle">\n                    <img src="assets/svg/HR_Leave_Request.svg" class="box-icon">\n                    </div>\n                    <div class="box-subtitle">Leave Request</div>\n                </div>\n                </button>\n            </ion-col>\n        </ion-row>\n        <ion-row>\n            <ion-col>\n                <button ion-button clear color="dark">\n                <div class="box">\n                    <!--<ion-badge>02</ion-badge>-->\n                    <div class="circle">\n                    <img src="assets/svg/HR_Enquiries.svg" class="box-icon">\n                    </div>\n                    <div class="box-subtitle">Enquiries</div>\n                </div>\n                </button>\n            </ion-col>\n            <ion-col>\n                <button ion-button clear color="dark">\n                <div class="box">\n                    <!--<ion-badge>02</ion-badge>-->\n                    <div class="circle">\n                    <img src="assets/svg/HR_Emergency.svg" class="box-icon">\n                    </div>\n                    <div class="box-subtitle">Emergency</div>\n                </div>\n                </button>\n            </ion-col>\n            <ion-col>\n                <button ion-button clear color="dark">\n                <div class="box">\n                    <!--<ion-badge>02</ion-badge>-->\n                    <div class="circle">\n                    <img src="assets/svg/HR_Sick_Leave.svg" class="box-icon">\n                    </div>\n                    <div class="box-subtitle">Sick Leave</div>\n                </div>\n                </button>\n            </ion-col>\n        </ion-row>\n        <ion-row>\n            <ion-col>\n                <button ion-button clear color="dark">\n                <div class="box">\n                    <!--<ion-badge>02</ion-badge>-->\n                    <div class="circle">\n                    <img src="assets/svg/HR_NOC.svg" class="box-icon">\n                    </div>\n                    <div class="box-subtitle">N.O.C.</div>\n                </div>\n                </button>\n            </ion-col>\n            <ion-col>\n                <button ion-button clear color="dark">\n                <div class="box">\n                    <!--<ion-badge>02</ion-badge>-->\n                    <div class="circle">\n                    <img src="assets/svg/HR_Passport.svg" class="box-icon">\n                    </div>\n                    <div class="box-subtitle">Passport</div>\n                </div>\n                </button>\n            </ion-col>\n            <ion-col>\n                <button ion-button clear color="dark">\n                <div class="box">\n                    <!--<ion-badge>02</ion-badge>-->\n                    <div class="circle">\n                    <img src="assets/svg/HR_Accomodation.svg" class="box-icon">\n                    </div>\n                    <div class="box-subtitle">Accommodation</div>\n                </div>\n                </button>\n            </ion-col>\n        </ion-row>\n    </ion-grid>\n</ion-content>'/*ion-inline-end:"E:\CERT Connect - JK\CertConnectMobile\src\pages\hr\hr.html"*/,
     }),
-    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */]])
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */]) === "function" && _b || Object])
 ], HrPage);
 
+var _a, _b;
 //# sourceMappingURL=hr.js.map
 
 /***/ }),
@@ -55868,6 +55874,7 @@ RegisterPage = __decorate([
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(20);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__salary_certificate_request_salary_certificate_request__ = __webpack_require__(271);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SalaryCertificatePage; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -55880,12 +55887,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 
 
-/**
- * Generated class for the SalaryCertificatePage page.
- *
- * See http://ionicframework.com/docs/components/#navigation for more info
- * on Ionic pages and navigation.
- */
+
 var SalaryCertificatePage = (function () {
     function SalaryCertificatePage(navCtrl, navParams) {
         this.navCtrl = navCtrl;
@@ -55894,16 +55896,20 @@ var SalaryCertificatePage = (function () {
     SalaryCertificatePage.prototype.ionViewDidLoad = function () {
         console.log('ionViewDidLoad SalaryCertificatePage');
     };
+    SalaryCertificatePage.prototype.salaryCertificateRequest = function () {
+        this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_2__salary_certificate_request_salary_certificate_request__["a" /* SalaryCertificateRequestPage */]);
+    };
     return SalaryCertificatePage;
 }());
 SalaryCertificatePage = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* IonicPage */])(),
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_5" /* Component */])({
-        selector: 'page-salary-certificate',template:/*ion-inline-start:"E:\CERT Connect - JK\CertConnectMobile\src\pages\salary-certificate\salary-certificate.html"*/'<ion-header>\n    <ion-navbar>\n        <ion-title>Salary Certificate</ion-title>\n    </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n    <ion-title>Salary Certificate List</ion-title>\n    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam gravida venenatis tempus.</p>\n    <ion-list>\n        <ion-list-header>\n            My Salary Certificates\n        </ion-list-header>\n        <ion-item>\n            <button ion-fab item-start color="secondary">\n              <ion-icon name="document"></ion-icon>\n            </button>\n            <h2 padding>Credit Card\n                <p>20th June 2017 - Approved</p>\n            </h2>\n            <ion-icon item-end name="checkmark" color="secondary"></ion-icon>\n        </ion-item>\n        <ion-item>\n            <button ion-fab item-start color="disable">\n              <ion-icon name="document"></ion-icon>\n            </button>\n            <h2 padding>Bank Loan\n                <p>20th June 2017 - Pending</p>\n            </h2>\n            <ion-icon item-end name="time" color="disable"></ion-icon>\n        </ion-item>\n        <ion-item>\n            <button ion-fab item-start color="disable">\n              <ion-icon name="document"></ion-icon>\n            </button>\n            <h2 padding>Bank Loan\n                <p>20th June 2017 - Pending</p>\n            </h2>\n            <ion-icon item-end name="time" color="disable"></ion-icon>\n        </ion-item>\n        <ion-item>\n            <button ion-fab item-start color="disable">\n              <ion-icon name="document"></ion-icon>\n            </button>\n            <h2 padding>Bank Loan\n                <p>20th June 2017 - Pending</p>\n            </h2>\n            <ion-icon item-end name="time" color="disable"></ion-icon>\n        </ion-item>\n        <ion-item>\n            <button ion-fab item-start color="disable">\n              <ion-icon name="document"></ion-icon>\n            </button>\n            <h2 padding>Bank Loan\n                <p>20th June 2017 - Pending</p>\n            </h2>\n            <ion-icon item-end name="time" color="disable"></ion-icon>\n        </ion-item>\n    </ion-list>\n</ion-content>\n<ion-fab right bottom margin>\n    <button ion-fab color="secondary"><ion-icon name="create"></ion-icon></button>\n</ion-fab>'/*ion-inline-end:"E:\CERT Connect - JK\CertConnectMobile\src\pages\salary-certificate\salary-certificate.html"*/,
+        selector: 'page-salary-certificate',template:/*ion-inline-start:"E:\CERT Connect - JK\CertConnectMobile\src\pages\salary-certificate\salary-certificate.html"*/'<ion-header>\n    <ion-navbar>\n        <ion-title>Salary Certificate</ion-title>\n    </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n    <ion-title>Salary Certificate List</ion-title>\n    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam gravida venenatis tempus.</p>\n    <ion-list>\n        <ion-list-header>\n            My Salary Certificates\n        </ion-list-header>\n        <ion-item>\n            <button ion-fab item-start color="secondary">\n              <ion-icon name="document"></ion-icon>\n            </button>\n            <h2 padding>Credit Card\n                <p>20th June 2017 - Approved</p>\n            </h2>\n            <ion-icon item-end name="checkmark" color="secondary"></ion-icon>\n        </ion-item>\n        <ion-item>\n            <button ion-fab item-start color="disable">\n              <ion-icon name="document"></ion-icon>\n            </button>\n            <h2 padding>Bank Loan\n                <p>20th June 2017 - Pending</p>\n            </h2>\n            <ion-icon item-end name="time" color="disable"></ion-icon>\n        </ion-item>\n        <ion-item>\n            <button ion-fab item-start color="disable">\n              <ion-icon name="document"></ion-icon>\n            </button>\n            <h2 padding>Bank Loan\n                <p>20th June 2017 - Pending</p>\n            </h2>\n            <ion-icon item-end name="time" color="disable"></ion-icon>\n        </ion-item>\n        <ion-item>\n            <button ion-fab item-start color="disable">\n              <ion-icon name="document"></ion-icon>\n            </button>\n            <h2 padding>Bank Loan\n                <p>20th June 2017 - Pending</p>\n            </h2>\n            <ion-icon item-end name="time" color="disable"></ion-icon>\n        </ion-item>\n        <ion-item>\n            <button ion-fab item-start color="disable">\n              <ion-icon name="document"></ion-icon>\n            </button>\n            <h2 padding>Bank Loan\n                <p>20th June 2017 - Pending</p>\n            </h2>\n            <ion-icon item-end name="time" color="disable"></ion-icon>\n        </ion-item>\n    </ion-list>\n</ion-content>\n<ion-fab right bottom margin>\n    <button ion-fab color="secondary" (click)="salaryCertificateRequest();"><ion-icon name="create"></ion-icon></button>\n</ion-fab>'/*ion-inline-end:"E:\CERT Connect - JK\CertConnectMobile\src\pages\salary-certificate\salary-certificate.html"*/,
     }),
-    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */]])
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */]) === "function" && _b || Object])
 ], SalaryCertificatePage);
 
+var _a, _b;
 //# sourceMappingURL=salary-certificate.js.map
 
 /***/ }),
@@ -74841,9 +74847,10 @@ LoginPage = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_5" /* Component */])({
         selector: 'page-login',template:/*ion-inline-start:"E:\CERT Connect - JK\CertConnectMobile\src\pages\login\login.html"*/'<ion-content padding>\n\n    <ion-grid class="grid">\n\n        <ion-row class="row">\n\n            <ion-col class="col">\n\n                <!--<div>Left Column</div>-->\n\n            </ion-col>\n\n            <ion-col class="col" col-auto>\n\n                <ion-avatar item-start>\n\n                    <img src="assets/svg/CertConnectLogoSVG.svg" class="logo">\n\n                </ion-avatar>\n\n            </ion-col>\n\n            <ion-col class="col">\n\n                <!--<div>Right Column</div>-->\n\n            </ion-col>\n\n        </ion-row>\n\n        <ion-row class="row">\n\n            <ion-col class="col">\n\n                <!--<div>Left Column</div>-->\n\n            </ion-col>\n\n            <ion-col class="col" col-auto>\n\n                <ion-avatar item-start>\n\n                    <img src="assets/svg/Avatar.svg" class="avatar">\n\n                </ion-avatar>\n\n            </ion-col>\n\n            <ion-col class="col">\n\n                <!--<div>Right Column</div>-->\n\n            </ion-col>\n\n        </ion-row>\n\n    </ion-grid>\n\n    <ion-list>\n\n        <ion-item>\n\n            <ion-label floating>Username</ion-label>\n\n            <ion-input type="text"></ion-input>\n\n        </ion-item>\n\n        <ion-item>\n\n            <ion-label floating>Password</ion-label>\n\n            <ion-input type="password"></ion-input>\n\n        </ion-item>\n\n    </ion-list>\n\n    <button ion-button full (click)=\'homePage();\'>Login</button>\n\n    <p>Not a member yet? Get a CERT Connect ID.</p>\n\n    <button ion-button full color="secondary" clear (click)=\'registerPage();\'>Register</button>\n\n</ion-content>'/*ion-inline-end:"E:\CERT Connect - JK\CertConnectMobile\src\pages\login\login.html"*/,
     }),
-    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */]])
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */]) === "function" && _b || Object])
 ], LoginPage);
 
+var _a, _b;
 //# sourceMappingURL=login.js.map
 
 /***/ }),
@@ -74900,7 +74907,7 @@ SplashScreenPage = __decorate([
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(20);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__ = __webpack_require__(106);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(105);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pages_salary_certificate_request_salary_certificate_request__ = __webpack_require__(271);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pages_login_login__ = __webpack_require__(198);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MyApp; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -74918,7 +74925,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 var MyApp = (function () {
     function MyApp(platform, statusBar, splashScreen) {
-        this.rootPage = __WEBPACK_IMPORTED_MODULE_4__pages_salary_certificate_request_salary_certificate_request__["a" /* SalaryCertificateRequestPage */];
+        this.rootPage = __WEBPACK_IMPORTED_MODULE_4__pages_login_login__["a" /* LoginPage */];
         platform.ready().then(function () {
             // Okay, so the platform is ready and our plugins are available.
             // Here you can do any higher level native things you might need.
@@ -74931,9 +74938,10 @@ var MyApp = (function () {
 MyApp = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_5" /* Component */])({template:/*ion-inline-start:"E:\CERT Connect - JK\CertConnectMobile\src\app\app.html"*/'<ion-nav [root]="rootPage"></ion-nav>\n'/*ion-inline-end:"E:\CERT Connect - JK\CertConnectMobile\src\app\app.html"*/
     }),
-    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* Platform */], __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__["a" /* StatusBar */], __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__["a" /* SplashScreen */]])
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* Platform */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* Platform */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__["a" /* StatusBar */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__["a" /* StatusBar */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__["a" /* SplashScreen */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__["a" /* SplashScreen */]) === "function" && _c || Object])
 ], MyApp);
 
+var _a, _b, _c;
 //# sourceMappingURL=app.component.js.map
 
 /***/ }),

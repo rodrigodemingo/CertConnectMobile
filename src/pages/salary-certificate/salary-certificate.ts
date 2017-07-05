@@ -1,12 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import {SalaryCertificateRequestPage} from '../salary-certificate-request/salary-certificate-request'
 
-/**
- * Generated class for the SalaryCertificatePage page.
- *
- * See http://ionicframework.com/docs/components/#navigation for more info
- * on Ionic pages and navigation.
- */
 @IonicPage()
 @Component({
   selector: 'page-salary-certificate',
@@ -20,5 +15,7 @@ export class SalaryCertificatePage {
   ionViewDidLoad() {
     console.log('ionViewDidLoad SalaryCertificatePage');
   }
-
+salaryCertificateRequest() {
+  this.navCtrl.push(SalaryCertificateRequestPage);
+}
 }
