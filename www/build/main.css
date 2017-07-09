@@ -53195,7 +53195,8 @@ ion-navbar .toolbar-background {
   background-color: #28B5F4;
 }
 
-ion-navbar .toolbar-title, ion-navbar .button-inner {
+ion-navbar .toolbar-title,
+ion-navbar .button-inner {
   color: #f4f4f4;
 }
 
@@ -53276,6 +53277,17 @@ ion-navbar .toolbar-title, ion-navbar .button-inner {
 
 #grid-menu .item-md.item-block .item-inner {
   border: none;
+}
+
+#top-menu .segment-button {
+  height: 10rem;
+  border: none;
+  line-height: 1.5rem;
+}
+
+#top-menu .box-icon {
+  height: 2.4rem;
+  margin-top: 2rem;
 }
 
 page-home .grid {

@@ -1,9 +1,23 @@
 <ion-header>
-
     <ion-navbar>
         <ion-title>Operations Department</ion-title>
     </ion-navbar>
-
+    <ion-toolbar id="top-menu">
+        <ion-segment color="dark">
+            <ion-segment-button>
+                <img src="assets/svg/accounts.svg" class="box-icon" color="disable">
+                <p>Finance</p>
+            </ion-segment-button>
+            <ion-segment-button>
+                <img src="assets/svg/operations.svg" class="box-icon" color="secondary">
+                <p>Operations</p>
+            </ion-segment-button>
+            <ion-segment-button>
+                <img src="assets/svg/training.svg" class="box-icon" color="disable">
+                <p>Training</p>
+            </ion-segment-button>
+        </ion-segment>
+    </ion-toolbar>
 </ion-header>
 
 <ion-content id="grid-menu">
