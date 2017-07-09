@@ -53247,7 +53247,7 @@ ion-navbar .button-inner {
 }
 
 #grid-menu .circle:active {
-  background-color: #0085C1;
+  background-color: #58A5F0;
 }
 
 #grid-menu .circle img:active {
@@ -53256,8 +53256,8 @@ ion-navbar .button-inner {
 }
 
 #grid-menu .box-icon {
-  width: 3rem;
-  height: 3rem;
+  width: 2.5rem;
+  height: 2.5rem;
 }
 
 #grid-menu .box-subtitle {
@@ -53269,10 +53269,8 @@ ion-navbar .button-inner {
 
 #grid-menu .box img {
   color: #4B4B4B;
-  -webkit-text-fill-color: currentColor;
-  fill: currentColor;
   position: relative;
-  top: 25px;
+  top: 26px;
 }
 
 #grid-menu .item-md.item-block .item-inner {
@@ -53283,11 +53281,6 @@ ion-navbar .button-inner {
   height: 10rem;
   border: none;
   line-height: 1.5rem;
-}
-
-#top-menu .box-icon {
-  height: 2.4rem;
-  margin-top: 2rem;
 }
 
 #top-menu .toolbar-content {
@@ -53303,6 +53296,68 @@ ion-navbar .button-inner {
 
 #top-menu .segment {
   width: 200%;
+}
+
+#top-menu .box {
+  margin: 2.7rem auto;
+}
+
+#top-menu .box p {
+  font-size: 1.4rem;
+  color: #ABADB0;
+}
+
+#top-menu .svg-icon {
+  background-color: #ABADB0;
+  height: 2.5rem;
+}
+
+#top-menu .box-active p {
+  color: #0277BD;
+}
+
+#top-menu .box-active .svg-icon {
+  background-color: #0277BD;
+}
+
+.svg-training {
+  -webkit-mask: url(../assets/svg/training.svg) no-repeat center;
+  mask: url(../assets/svg/training.svg) no-repeat center;
+}
+
+.svg-meter {
+  -webkit-mask: url(../assets/svg/meter.svg) no-repeat center;
+  mask: url(../assets/svg/meter.svg) no-repeat center;
+}
+
+.svg-driver-care {
+  -webkit-mask: url(../assets/svg/driver_care.svg) no-repeat center;
+  mask: url(../assets/svg/driver_care.svg) no-repeat center;
+}
+
+.svg-hr {
+  -webkit-mask: url(../assets/svg/hr.svg) no-repeat center;
+  mask: url(../assets/svg/hr.svg) no-repeat center;
+}
+
+.svg-finance {
+  -webkit-mask: url(../assets/svg/finance.svg) no-repeat center;
+  mask: url(../assets/svg/finance.svg) no-repeat center;
+}
+
+.svg-operations {
+  -webkit-mask: url(../assets/svg/operations.svg) no-repeat center;
+  mask: url(../assets/svg/operations.svg) no-repeat center;
+}
+
+.svg-icon-color-disable {
+  background-color: #ABADB0;
+}
+
+.svg-hr:active {
+  background-color: #222;
+  -webkit-mask: url(../assets/svg/hr.svg) no-repeat center;
+  mask: url(../assets/svg/hr.svg) no-repeat center;
 }
 
 page-home .grid {
