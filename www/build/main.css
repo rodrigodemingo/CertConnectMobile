@@ -53246,13 +53246,12 @@ ion-navbar .button-inner {
   margin: 0 auto;
 }
 
-#grid-menu .circle:active {
-  background-color: #58A5F0;
+#grid-menu button:active .circle {
+  background-color: #0277BD;
 }
 
-#grid-menu .circle img:active {
-  fill: #fff;
-  -webkit-text-fill-color: #fff;
+#grid-menu button:active .circle .svg-icon {
+  background-color: #f4f4f4;
 }
 
 #grid-menu .box-icon {
@@ -53267,8 +53266,9 @@ ion-navbar .button-inner {
   font-style: normal;
 }
 
-#grid-menu .box img {
-  color: #4B4B4B;
+#grid-menu .box .svg-icon {
+  background-color: #48484A;
+  color: #48484A;
   position: relative;
   top: 26px;
 }
@@ -53307,9 +53307,13 @@ ion-navbar .button-inner {
   color: #ABADB0;
 }
 
+.svg-icon {
+  height: 2.5rem;
+  background-color: #48484A;
+}
+
 #top-menu .svg-icon {
   background-color: #ABADB0;
-  height: 2.5rem;
 }
 
 #top-menu .box-active p {
@@ -53354,10 +53358,14 @@ ion-navbar .button-inner {
   background-color: #ABADB0;
 }
 
-.svg-hr:active {
-  background-color: #222;
-  -webkit-mask: url(../assets/svg/hr.svg) no-repeat center;
-  mask: url(../assets/svg/hr.svg) no-repeat center;
+.svg-salary-certificate {
+  -webkit-mask: url(../assets/svg/HR_SalaryCertificate.svg) no-repeat center;
+  mask: url(../assets/svg/HR_SalaryCertificate.svg) no-repeat center;
+}
+
+.svg-hr-holidays {
+  -webkit-mask: url(../assets/svg/HR_Holidays.svg) no-repeat center;
+  mask: url(../assets/svg/HR_Holidays.svg) no-repeat center;
 }
 
 page-home .grid {

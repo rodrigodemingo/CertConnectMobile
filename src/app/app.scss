@@ -21,7 +21,7 @@ ion-navbar .button-inner {
     color: map-get($colors, light);
 }
 
-// Main Menu Tile Grid
+// Sub Menu Tile Grid
 #grid-menu {
     .grid {
         padding: 0;
@@ -61,12 +61,11 @@ ion-navbar .button-inner {
         background-color: #F1F5F7;
         margin: 0 auto;
     }
-    .circle:active {
-        background-color: map-get($colors, secondary-light);
+    button:active .circle {
+        background-color: map-get($colors, secondary);
     }
-    .circle img:active {
-        fill: #fff;
-        -webkit-text-fill-color: #fff;
+    button:active .circle .svg-icon {
+        background-color: map-get($colors, light);
     }
     .box-icon {
         width: 2.5rem;
@@ -78,8 +77,9 @@ ion-navbar .button-inner {
         text-transform: none;
         font-style: normal;
     }
-    .box img {
-        color: #4B4B4B;
+    .box .svg-icon {
+        background-color: map-get($colors, text-primary);
+        color: map-get($colors, text-primary);
         position: relative;
         top: 26px;
     }
@@ -88,7 +88,7 @@ ion-navbar .button-inner {
     }
 }
 
-/////////////////////////////// HEADER TOP-MENU  ///////////////////////////////
+/////////////////////////////// HEADER DASHBOARD TOP-MENU  ///////////////////////////////
 #top-menu .segment-button {
     height: 10rem;
     border: none;
@@ -120,9 +120,13 @@ ion-navbar .button-inner {
 }
 
 // SVG ICONS
+.svg-icon {
+    height: 2.5rem;
+    background-color: map-get($colors, text-primary);
+}
+
 #top-menu .svg-icon {
     background-color: map-get($colors, disable);
-    height: 2.5rem;
 }
 
 // Selected Active Icon
@@ -135,7 +139,7 @@ ion-navbar .button-inner {
     }
 }
 
-// SVG PATHS
+// SVG DASHBOARD ICONS PATHS
 .svg-training {
     -webkit-mask: url(../assets/svg/training.svg) no-repeat center;
     mask: url(../assets/svg/training.svg) no-repeat center;
@@ -171,8 +175,12 @@ ion-navbar .button-inner {
     background-color: map-get($colors, disable);
 }
 
-.svg-hr:active {
-    background-color: map-get($colors, dark);
-    -webkit-mask: url(../assets/svg/hr.svg) no-repeat center;
-    mask: url(../assets/svg/hr.svg) no-repeat center;
+// SVG SUB-MENUES ICONS PATHS
+.svg-salary-certificate {
+    -webkit-mask: url(../assets/svg/HR_SalaryCertificate.svg) no-repeat center;
+    mask: url(../assets/svg/HR_SalaryCertificate.svg) no-repeat center;
+}
+.svg-hr-holidays {
+    -webkit-mask: url(../assets/svg/HR_Holidays.svg) no-repeat center;
+    mask: url(../assets/svg/HR_Holidays.svg) no-repeat center;
 }
