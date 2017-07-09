@@ -53290,6 +53290,21 @@ ion-navbar .button-inner {
   margin-top: 2rem;
 }
 
+#top-menu .toolbar-content {
+  overflow-x: scroll;
+  -webkit-overflow-scrolling: touch;
+  -ms-overflow-style: none;
+  overflow: -moz-scrollbars-none;
+}
+
+#top-menu .toolbar-content::-webkit-scrollbar {
+  display: none;
+}
+
+#top-menu .segment {
+  width: 200%;
+}
+
 page-home .grid {
   padding: 0;
 }
