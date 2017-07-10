@@ -12,6 +12,7 @@ import {HrPage} from '../pages/hr/hr';
 import {SalaryCertificatePage} from '../pages/salary-certificate/salary-certificate';
 import {SalaryCertificateRequestPage} from '../pages/salary-certificate-request/salary-certificate-request';
 import {OperationsPage} from '../pages/operations/operations';
+import{HttpModule} from '@angular/http';
 
 @NgModule({
   declarations: [
@@ -24,9 +25,10 @@ import {OperationsPage} from '../pages/operations/operations';
     SalaryCertificatePage,
     SalaryCertificateRequestPage,
     OperationsPage
+
   ],
   imports: [
-    BrowserModule,
+    BrowserModule,HttpModule,
     IonicModule.forRoot(MyApp),
 
   ],

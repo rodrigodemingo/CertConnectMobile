@@ -10,7 +10,7 @@
     "cordova-plugin-device": {
         "source": {
             "type": "registry",
-            "id": "cordova-plugin-device@1.1.4"
+            "id": "cordova-plugin-device@^1.1.4"
         },
         "is_top_level": true,
         "variables": {}
@@ -43,6 +43,14 @@
         "source": {
             "type": "registry",
             "id": "ionic-plugin-keyboard@~2.2.1"
+        },
+        "is_top_level": true,
+        "variables": {}
+    },
+    "cordova-plugin-x-toast": {
+        "source": {
+            "type": "registry",
+            "id": "cordova-plugin-x-toast"
         },
         "is_top_level": true,
         "variables": {}

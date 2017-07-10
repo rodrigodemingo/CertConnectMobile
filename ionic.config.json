@@ -1,5 +1,11 @@
 {
   "name": "CertConnectMobile",
   "app_id": "",
-  "type": "ionic-angular"
+  "type": "ionic-angular",
+  "proxies": [
+    {
+      "path": "",
+      "proxyUrl": "http://localhost:65168/api"
+    }
+  ]
 }

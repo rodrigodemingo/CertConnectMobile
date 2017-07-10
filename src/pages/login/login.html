@@ -27,17 +27,20 @@
             </ion-col>
         </ion-row>
     </ion-grid>
+    <form #form="ngForm" (ngSubmit)="homePage(loginForm.value);" [formGroup]="loginForm">
     <ion-list>
         <ion-item>
             <ion-label floating>Username</ion-label>
-            <ion-input type="text"></ion-input>
+            <ion-input type="text" id="userName" name="userName" [formControl]="loginForm.controls['userName']" required></ion-input>
         </ion-item>
         <ion-item>
             <ion-label floating>Password</ion-label>
-            <ion-input type="password"></ion-input>
+            <ion-input type="password"  id="password" name="password" [formControl]="loginForm.controls['password']"></ion-input>
         </ion-item>
     </ion-list>
-    <button ion-button full (click)='homePage();'>Login</button>
+    <button ion-button full type="submit" [disabled]="!loginForm.valid">Login</button>
+    <!--<button ion-button full (click)='homePage();'>Login</button>-->
+    </form>
     <p>Not a member yet? Get a CERT Connect ID.</p>
     <button ion-button full color="secondary" clear (click)='registerPage();'>Register</button>
 </ion-content>

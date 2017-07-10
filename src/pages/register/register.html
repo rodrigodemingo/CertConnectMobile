@@ -13,6 +13,29 @@
 </ion-header>
 
 
-<ion-content padding>
-
+<ion-content>
+<form #form="ngForm" (ngSubmit)="registerUser(registerForm.value);" [formGroup]="registerForm">
+    <ion-list>
+        <ion-item>
+            <ion-label floating>Display Name</ion-label>
+            <ion-input type="text" id="displayName" name="displayName" [formControl]="registerForm.controls['displayName']" required></ion-input>
+        </ion-item>
+        <ion-item>
+            <ion-label floating>Driver Number</ion-label>
+            <ion-input type="text" id="driverID" name="driverID" [formControl]="registerForm.controls['driverID']" required></ion-input>
+        </ion-item>
+        <ion-item>
+            <ion-label floating>Mobile Number</ion-label>
+            <ion-input type="text" id="mobileNumber" name="mobileNumber" [formControl]="registerForm.controls['mobileNumber']" required></ion-input>
+        </ion-item>
+        <ion-item>
+            <ion-label floating>Password</ion-label>
+            <ion-input type="password"  id="password" name="password" [formControl]="registerForm.controls['password']"></ion-input>
+        </ion-item>
+    </ion-list>
+    <button ion-button full type="submit" [disabled]="!registerForm.valid">Register</button>
+    <!--<button ion-button full (click)='homePage();'>Login</button>-->
+    </form>
+    <p>Already a member.</p>
+    <button ion-button full color="secondary" clear (click)='loginUser();'>Login</button>
 </ion-content>

@@ -12,6 +12,9 @@ export class HomePage {
   constructor(public navCtrl: NavController) {
 
   }
+  ionViewDidLoad() {
+    console.log(localStorage.getItem("userToken"));
+  }
   hrPage() {
     this.navCtrl.push(HrPage);
   }
