@@ -1,9 +1,47 @@
 <ion-header>
-
     <ion-navbar>
         <ion-title>Operations Department</ion-title>
     </ion-navbar>
-
+    <ion-toolbar id="top-menu">
+        <ion-segment color="dark">
+            <ion-segment-button>
+                <div class="box">
+                    <div class="svg-icon svg-finance"></div>
+                    <p>Finance</p>
+                </div>
+            </ion-segment-button>
+            <ion-segment-button>
+                <div class="box box-active">
+                    <div class="svg-icon svg-operations"></div>
+                    <p>Operations</p>
+                </div>
+            </ion-segment-button>
+            <ion-segment-button>
+                <div class="box">
+                    <div class="svg-icon svg-training"></div>
+                    <p>Training</p>
+                </div>
+            </ion-segment-button>
+            <ion-segment-button>
+                <div class="box">
+                    <div class="svg-icon svg-meter"></div>
+                    <p>Meter</p>
+                </div>
+            </ion-segment-button>
+            <ion-segment-button>
+                <div class="box">
+                    <div class="svg-icon svg-driver-care"></div>
+                    <p>Diver Care</p>
+                </div>
+            </ion-segment-button>
+            <ion-segment-button>
+                <div class="box">
+                    <div class="svg-icon svg-hr"></div>
+                    <p>HR</p>
+                </div>
+            </ion-segment-button>
+        </ion-segment>
+    </ion-toolbar>
 </ion-header>
 
 <ion-content id="grid-menu">
@@ -49,69 +87,14 @@
                 <div class="box">
                     <!--<ion-badge>02</ion-badge>-->
                     <div class="circle">
-                    <img src="assets/svg/HR_Enquiries.svg" class="box-icon">
+                    <img src="assets/svg/shiftChange.svg" class="box-icon">
                     </div>
-                    <div class="box-subtitle">Enquiries</div>
+                    <div class="box-subtitle">Shift Schedule</div>
                 </div>
                 </button>
             </ion-col>
-            <ion-col>
-                <button ion-button clear color="dark">
-                <div class="box">
-                    <!--<ion-badge>02</ion-badge>-->
-                    <div class="circle">
-                    <img src="assets/svg/HR_Emergency.svg" class="box-icon">
-                    </div>
-                    <div class="box-subtitle">Emergency</div>
-                </div>
-                </button>
-            </ion-col>
-            <ion-col>
-                <button ion-button clear color="dark">
-                <div class="box">
-                    <!--<ion-badge>02</ion-badge>-->
-                    <div class="circle">
-                    <img src="assets/svg/HR_Sick_Leave.svg" class="box-icon">
-                    </div>
-                    <div class="box-subtitle">Sick Leave</div>
-                </div>
-                </button>
-            </ion-col>
-        </ion-row>
-        <ion-row>
-            <ion-col>
-                <button ion-button clear color="dark">
-                <div class="box">
-                    <!--<ion-badge>02</ion-badge>-->
-                    <div class="circle">
-                    <img src="assets/svg/HR_NOC.svg" class="box-icon">
-                    </div>
-                    <div class="box-subtitle">N.O.C.</div>
-                </div>
-                </button>
-            </ion-col>
-            <ion-col>
-                <button ion-button clear color="dark">
-                <div class="box">
-                    <!--<ion-badge>02</ion-badge>-->
-                    <div class="circle">
-                    <img src="assets/svg/HR_Passport.svg" class="box-icon">
-                    </div>
-                    <div class="box-subtitle">Passport</div>
-                </div>
-                </button>
-            </ion-col>
-            <ion-col>
-                <button ion-button clear color="dark">
-                <div class="box">
-                    <!--<ion-badge>02</ion-badge>-->
-                    <div class="circle">
-                    <img src="assets/svg/HR_Accomodation.svg" class="box-icon">
-                    </div>
-                    <div class="box-subtitle">Accommodation</div>
-                </div>
-                </button>
-            </ion-col>
+            <ion-col></ion-col>
+            <ion-col></ion-col>
         </ion-row>
     </ion-grid>
 </ion-content>

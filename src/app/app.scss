@@ -1,6 +1,4 @@
 // http://ionicframework.com/docs/v2/theming/
-
-
 // App Global Sass
 // --------------------------------------------------
 // Put style rules here that you want to apply globally. These
@@ -14,15 +12,16 @@
 // To declare rules for a specific mode, create a child rule
 // for the .md, .ios, or .wp mode classes. The mode class is
 // automatically applied to the <body> element in the app.
-
 ion-navbar .toolbar-background {
-  background-color: map-get($colors, primary);
-}
-ion-navbar .toolbar-title, ion-navbar .button-inner {
-  color: map-get($colors, light);
+    background-color: map-get($colors, primary);
 }
 
-// Main Menu
+ion-navbar .toolbar-title,
+ion-navbar .button-inner {
+    color: map-get($colors, light);
+}
+
+// Sub Menu Tile Grid
 #grid-menu {
     .grid {
         padding: 0;
@@ -62,16 +61,15 @@ ion-navbar .toolbar-title, ion-navbar .button-inner {
         background-color: #F1F5F7;
         margin: 0 auto;
     }
-    .circle:active {
-        background-color: #0085C1;
+    button:active .circle {
+        background-color: map-get($colors, secondary);
     }
-    .circle img:active {
-        fill: #fff;
-        -webkit-text-fill-color: #fff;
+    button:active .circle .svg-icon {
+        background-color: map-get($colors, light);
     }
     .box-icon {
-        width: 3rem;
-        height: 3rem;
+        width: 2.5rem;
+        height: 2.5rem;
     }
     .box-subtitle {
         margin-top: 1.5rem;
@@ -79,14 +77,110 @@ ion-navbar .toolbar-title, ion-navbar .button-inner {
         text-transform: none;
         font-style: normal;
     }
-    .box img {
-        color: #4B4B4B;
-        -webkit-text-fill-color: currentColor;
-        fill: currentColor;
+    .box .svg-icon {
+        background-color: map-get($colors, text-primary);
+        color: map-get($colors, text-primary);
         position: relative;
-        top: 25px;
+        top: 26px;
     }
     .item-md.item-block .item-inner {
         border: none;
     }
+}
+
+/////////////////////////////// HEADER DASHBOARD TOP-MENU  ///////////////////////////////
+#top-menu .segment-button {
+    height: 10rem;
+    border: none;
+    line-height: 1.5rem;
+}
+
+#top-menu .toolbar-content {
+    overflow-x: scroll;
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: none; // IE 10+ (Hide Scrollbar)
+    overflow: -moz-scrollbars-none; // Firefox (Hide Scrollbar)
+}
+
+#top-menu .toolbar-content::-webkit-scrollbar {
+    display: none; // Safari and Chrome (Hide Scrollbar)
+}
+
+#top-menu .segment {
+    width: 200%;
+}
+
+#top-menu .box {
+    margin: 2.7rem auto;
+}
+
+#top-menu .box p {
+    font-size: 1.4rem;
+    color: map-get($colors, disable);
+}
+
+// SVG ICONS
+.svg-icon {
+    height: 2.5rem;
+    background-color: map-get($colors, text-primary);
+}
+
+#top-menu .svg-icon {
+    background-color: map-get($colors, disable);
+}
+
+// Selected Active Icon
+#top-menu .box-active {
+    p {
+        color: map-get($colors, secondary);
+    }
+    .svg-icon {
+        background-color: map-get($colors, secondary);
+    }
+}
+
+// SVG DASHBOARD ICONS PATHS
+.svg-training {
+    -webkit-mask: url(../assets/svg/training.svg) no-repeat center;
+    mask: url(../assets/svg/training.svg) no-repeat center;
+}
+
+.svg-meter {
+    -webkit-mask: url(../assets/svg/meter.svg) no-repeat center;
+    mask: url(../assets/svg/meter.svg) no-repeat center;
+}
+
+.svg-driver-care {
+    -webkit-mask: url(../assets/svg/driver_care.svg) no-repeat center;
+    mask: url(../assets/svg/driver_care.svg) no-repeat center;
+}
+
+.svg-hr {
+    -webkit-mask: url(../assets/svg/hr.svg) no-repeat center;
+    mask: url(../assets/svg/hr.svg) no-repeat center;
+}
+
+.svg-finance {
+    -webkit-mask: url(../assets/svg/finance.svg) no-repeat center;
+    mask: url(../assets/svg/finance.svg) no-repeat center;
+}
+
+.svg-operations {
+    -webkit-mask: url(../assets/svg/operations.svg) no-repeat center;
+    mask: url(../assets/svg/operations.svg) no-repeat center;
+}
+
+// SVG PATHS:status
+.svg-icon-color-disable {
+    background-color: map-get($colors, disable);
+}
+
+// SVG SUB-MENUES ICONS PATHS
+.svg-salary-certificate {
+    -webkit-mask: url(../assets/svg/HR_SalaryCertificate.svg) no-repeat center;
+    mask: url(../assets/svg/HR_SalaryCertificate.svg) no-repeat center;
+}
+.svg-hr-holidays {
+    -webkit-mask: url(../assets/svg/HR_Holidays.svg) no-repeat center;
+    mask: url(../assets/svg/HR_Holidays.svg) no-repeat center;
 }

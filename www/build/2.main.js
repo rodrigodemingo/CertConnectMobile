@@ -1,13 +1,22 @@
 webpackJsonp([2],{
 
+<<<<<<< HEAD
 /***/ 273:
+=======
+/***/ 271:
+>>>>>>> 8b2977ddb00abbee6706e2d641242b1b7f4afb7c
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+<<<<<<< HEAD
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(14);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__salary_certificate_request__ = __webpack_require__(103);
+=======
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(16);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__salary_certificate_request__ = __webpack_require__(102);
+>>>>>>> 8b2977ddb00abbee6706e2d641242b1b7f4afb7c
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SalaryCertificateRequestPageModule", function() { return SalaryCertificateRequestPageModule; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;

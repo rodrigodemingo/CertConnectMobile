@@ -3,7 +3,46 @@
     <ion-navbar>
         <ion-title>HR Department</ion-title>
     </ion-navbar>
-
+    <ion-toolbar id="top-menu">
+        <ion-segment color="dark">
+            <ion-segment-button>
+                <div class="box">
+                    <div class="svg-icon svg-driver-care"></div>
+                    <p>Diver Care</p>
+                </div>
+            </ion-segment-button>
+            <ion-segment-button>
+                <div class="box box-active">
+                   <div class="svg-icon svg-hr"></div>
+                    <p>HR</p>
+                </div>
+            </ion-segment-button>
+            <ion-segment-button>
+                <div class="box">
+                    <div class="svg-icon svg-finance"></div>
+                    <p>Finance</p>
+                </div>
+            </ion-segment-button>
+            <ion-segment-button>
+                <div class="box">
+                    <div class="svg-icon svg-operations"></div>
+                    <p>Operations</p>
+                </div>
+            </ion-segment-button>
+            <ion-segment-button>
+                <div class="box">
+                    <div class="svg-icon svg-training"></div>
+                    <p>Training</p>
+                </div>
+            </ion-segment-button>
+            <ion-segment-button>
+                <div class="box">
+                    <div class="svg-icon svg-meter"></div>
+                    <p>Meter</p>
+                </div>
+            </ion-segment-button>
+        </ion-segment>
+    </ion-toolbar>
 </ion-header>
 
 <ion-content id="grid-menu">
@@ -14,7 +53,7 @@
                     <div class="box">
                       <!--<ion-badge>02</ion-badge>-->
                       <div class="circle">
-                      <img src="assets/svg/HR_Holidays.svg" class="box-icon">
+                          <div class="svg-icon svg-hr-holidays"></div>
                       </div>
                       <div class="box-subtitle">Holidays</div>
                     </div>
@@ -25,7 +64,7 @@
                 <div class="box">
                     <!--<ion-badge>02</ion-badge>-->
                     <div class="circle">
-                    <img src="assets/svg/HR_SalaryCertificate.svg" class="box-icon">
+                        <div class="svg-icon svg-salary-certificate"></div>
                     </div>
                     <div class="box-subtitle">Salary Certificate</div>
                 </div>
