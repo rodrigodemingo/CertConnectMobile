@@ -81,7 +81,7 @@ ion-navbar .button-inner {
         background-color: map-get($colors, text-primary);
         color: map-get($colors, text-primary);
         position: relative;
-        top: 26px;
+        top: 2.7rem;
     }
     .item-md.item-block .item-inner {
         border: none;
@@ -175,12 +175,48 @@ ion-navbar .button-inner {
     background-color: map-get($colors, disable);
 }
 
-// SVG SUB-MENUES ICONS PATHS
-.svg-salary-certificate {
+// SVG HR - ICONS PATHS
+.svg-hr-salary-certificate {
     -webkit-mask: url(../assets/svg/HR_SalaryCertificate.svg) no-repeat center;
     mask: url(../assets/svg/HR_SalaryCertificate.svg) no-repeat center;
 }
+
 .svg-hr-holidays {
     -webkit-mask: url(../assets/svg/HR_Holidays.svg) no-repeat center;
     mask: url(../assets/svg/HR_Holidays.svg) no-repeat center;
+}
+
+.svg-hr-leave-request {
+    -webkit-mask: url(../assets/svg/HR_Leave_Request.svg) no-repeat center;
+    mask: url(../assets/svg/HR_Leave_Request.svg) no-repeat center;
+}
+
+.svg-hr-enquiries {
+    -webkit-mask: url(../assets/svg/HR_Enquiries.svg) no-repeat center;
+    mask: url(../assets/svg/HR_Enquiries.svg) no-repeat center;
+}
+
+.svg-hr-emergency {
+    -webkit-mask: url(../assets/svg/HR_Emergency.svg) no-repeat center;
+    mask: url(../assets/svg/HR_Emergency.svg) no-repeat center;
+}
+
+.svg-hr-sick-leave {
+    -webkit-mask: url(../assets/svg/HR_Sick_Leave.svg) no-repeat center;
+    mask: url(../assets/svg/HR_Sick_Leave.svg) no-repeat center;
+}
+
+.svg-hr-noc {
+    -webkit-mask: url(../assets/svg/HR_NOC.svg) no-repeat center;
+    mask: url(../assets/svg/HR_NOC.svg) no-repeat center;
+}
+
+.svg-hr-passport {
+    -webkit-mask: url(../assets/svg/HR_Passport.svg) no-repeat center;
+    mask: url(../assets/svg/HR_Passport.svg) no-repeat center;
+}
+
+.svg-hr-accomodation {
+    -webkit-mask: url(../assets/svg/HR_Accomodation.svg) no-repeat center;
+    mask: url(../assets/svg/HR_Accomodation.svg) no-repeat center;
 }
