@@ -53254,11 +53254,6 @@ ion-navbar .button-inner {
   background-color: #f4f4f4;
 }
 
-#grid-menu .box-icon {
-  width: 2.5rem;
-  height: 2.5rem;
-}
-
 #grid-menu .box-subtitle {
   margin-top: 1.5rem;
   font-family: sans-serif;
@@ -53401,6 +53396,26 @@ ion-navbar .button-inner {
 .svg-hr-accomodation {
   -webkit-mask: url(../assets/svg/HR_Accomodation.svg) no-repeat center;
   mask: url(../assets/svg/HR_Accomodation.svg) no-repeat center;
+}
+
+.svg-operations-car-accident {
+  -webkit-mask: url(../assets/svg/carAccident.svg) no-repeat center;
+  mask: url(../assets/svg/carAccident.svg) no-repeat center;
+}
+
+.svg-operations-vehicle-change {
+  -webkit-mask: url(../assets/svg/vehicleChange.svg) no-repeat center;
+  mask: url(../assets/svg/vehicleChange.svg) no-repeat center;
+}
+
+.svg-operations-maintenance {
+  -webkit-mask: url(../assets/svg/maintenance.svg) no-repeat center;
+  mask: url(../assets/svg/maintenance.svg) no-repeat center;
+}
+
+.svg-operations-shift-change {
+  -webkit-mask: url(../assets/svg/shiftChange.svg) no-repeat center;
+  mask: url(../assets/svg/shiftChange.svg) no-repeat center;
 }
 
 page-home .grid {
