@@ -53195,7 +53195,8 @@ ion-navbar .toolbar-background {
   background-color: #28B5F4;
 }
 
-ion-navbar .toolbar-title, ion-navbar .button-inner {
+ion-navbar .toolbar-title,
+ion-navbar .button-inner {
   color: #f4f4f4;
 }
 
@@ -53245,18 +53246,12 @@ ion-navbar .toolbar-title, ion-navbar .button-inner {
   margin: 0 auto;
 }
 
-#grid-menu .circle:active {
-  background-color: #0085C1;
+#grid-menu button:active .circle {
+  background-color: #0277BD;
 }
 
-#grid-menu .circle img:active {
-  fill: #fff;
-  -webkit-text-fill-color: #fff;
-}
-
-#grid-menu .box-icon {
-  width: 3rem;
-  height: 3rem;
+#grid-menu button:active .circle .svg-icon {
+  background-color: #f4f4f4;
 }
 
 #grid-menu .box-subtitle {
@@ -53266,16 +53261,171 @@ ion-navbar .toolbar-title, ion-navbar .button-inner {
   font-style: normal;
 }
 
-#grid-menu .box img {
-  color: #4B4B4B;
-  -webkit-text-fill-color: currentColor;
-  fill: currentColor;
+#grid-menu .box .svg-icon {
+  background-color: #48484A;
+  color: #48484A;
   position: relative;
-  top: 25px;
+  top: 2.7rem;
 }
 
 #grid-menu .item-md.item-block .item-inner {
   border: none;
+}
+
+ion-toolbar#top-menu .toolbar {
+  height: 15rem;
+}
+
+#top-menu .segment-button {
+  height: 10rem;
+  border: none;
+  line-height: 1.5rem;
+}
+
+#top-menu .box {
+  margin: 2.7rem auto;
+}
+
+#top-menu .box p {
+  color: #ABADB0;
+}
+
+.svg-icon {
+  height: 2.5rem;
+  background-color: #48484A;
+}
+
+#top-menu .svg-icon {
+  background-color: #ABADB0;
+}
+
+#top-menu .box-active p {
+  color: #0277BD;
+}
+
+#top-menu .box-active .svg-icon {
+  background-color: #0277BD;
+}
+
+.slider {
+  width: 100%;
+}
+
+.slick-slide {
+  margin: 0px 1rem;
+}
+
+.slick-prev {
+  left: 0;
+}
+
+.slick-next {
+  right: 0;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  color: #ABADB0;
+  font-size: 1.5rem;
+}
+
+.svg-training {
+  -webkit-mask: url(../assets/svg/training.svg) no-repeat center;
+  mask: url(../assets/svg/training.svg) no-repeat center;
+}
+
+.svg-meter {
+  -webkit-mask: url(../assets/svg/meter.svg) no-repeat center;
+  mask: url(../assets/svg/meter.svg) no-repeat center;
+}
+
+.svg-driver-care {
+  -webkit-mask: url(../assets/svg/driver_care.svg) no-repeat center;
+  mask: url(../assets/svg/driver_care.svg) no-repeat center;
+}
+
+.svg-hr {
+  -webkit-mask: url(../assets/svg/hr.svg) no-repeat center;
+  mask: url(../assets/svg/hr.svg) no-repeat center;
+}
+
+.svg-finance {
+  -webkit-mask: url(../assets/svg/finance.svg) no-repeat center;
+  mask: url(../assets/svg/finance.svg) no-repeat center;
+}
+
+.svg-operations {
+  -webkit-mask: url(../assets/svg/operations.svg) no-repeat center;
+  mask: url(../assets/svg/operations.svg) no-repeat center;
+}
+
+.svg-icon-color-disable {
+  background-color: #ABADB0;
+}
+
+.svg-hr-salary-certificate {
+  -webkit-mask: url(../assets/svg/HR_SalaryCertificate.svg) no-repeat center;
+  mask: url(../assets/svg/HR_SalaryCertificate.svg) no-repeat center;
+}
+
+.svg-hr-holidays {
+  -webkit-mask: url(../assets/svg/HR_Holidays.svg) no-repeat center;
+  mask: url(../assets/svg/HR_Holidays.svg) no-repeat center;
+}
+
+.svg-hr-leave-request {
+  -webkit-mask: url(../assets/svg/HR_Leave_Request.svg) no-repeat center;
+  mask: url(../assets/svg/HR_Leave_Request.svg) no-repeat center;
+}
+
+.svg-hr-enquiries {
+  -webkit-mask: url(../assets/svg/HR_Enquiries.svg) no-repeat center;
+  mask: url(../assets/svg/HR_Enquiries.svg) no-repeat center;
+}
+
+.svg-hr-emergency {
+  -webkit-mask: url(../assets/svg/HR_Emergency.svg) no-repeat center;
+  mask: url(../assets/svg/HR_Emergency.svg) no-repeat center;
+}
+
+.svg-hr-sick-leave {
+  -webkit-mask: url(../assets/svg/HR_Sick_Leave.svg) no-repeat center;
+  mask: url(../assets/svg/HR_Sick_Leave.svg) no-repeat center;
+}
+
+.svg-hr-noc {
+  -webkit-mask: url(../assets/svg/HR_NOC.svg) no-repeat center;
+  mask: url(../assets/svg/HR_NOC.svg) no-repeat center;
+}
+
+.svg-hr-passport {
+  -webkit-mask: url(../assets/svg/HR_Passport.svg) no-repeat center;
+  mask: url(../assets/svg/HR_Passport.svg) no-repeat center;
+}
+
+.svg-hr-accomodation {
+  -webkit-mask: url(../assets/svg/HR_Accomodation.svg) no-repeat center;
+  mask: url(../assets/svg/HR_Accomodation.svg) no-repeat center;
+}
+
+.svg-operations-car-accident {
+  -webkit-mask: url(../assets/svg/carAccident.svg) no-repeat center;
+  mask: url(../assets/svg/carAccident.svg) no-repeat center;
+}
+
+.svg-operations-vehicle-change {
+  -webkit-mask: url(../assets/svg/vehicleChange.svg) no-repeat center;
+  mask: url(../assets/svg/vehicleChange.svg) no-repeat center;
+}
+
+.svg-operations-maintenance {
+  -webkit-mask: url(../assets/svg/maintenance.svg) no-repeat center;
+  mask: url(../assets/svg/maintenance.svg) no-repeat center;
+}
+
+.svg-operations-shift-change {
+  -webkit-mask: url(../assets/svg/shiftChange.svg) no-repeat center;
+  mask: url(../assets/svg/shiftChange.svg) no-repeat center;
 }
 
 page-home .grid {

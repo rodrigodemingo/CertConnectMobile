@@ -53272,25 +53272,15 @@ ion-navbar .button-inner {
   border: none;
 }
 
+ion-toolbar#top-menu {
+  height: 10rem;
+}
+
 #top-menu .segment-button {
   height: 10rem;
   border: none;
   line-height: 1.5rem;
-}
-
-#top-menu .toolbar-content {
-  overflow-x: scroll;
-  -webkit-overflow-scrolling: touch;
-  -ms-overflow-style: none;
-  overflow: -moz-scrollbars-none;
-}
-
-#top-menu .toolbar-content::-webkit-scrollbar {
-  display: none;
-}
-
-#top-menu .segment {
-  width: 200%;
+  max-width: 100%;
 }
 
 #top-menu .box {
@@ -53298,7 +53288,6 @@ ion-navbar .button-inner {
 }
 
 #top-menu .box p {
-  font-size: 1.4rem;
   color: #ABADB0;
 }
 
@@ -53317,6 +53306,28 @@ ion-navbar .button-inner {
 
 #top-menu .box-active .svg-icon {
   background-color: #0277BD;
+}
+
+.slider {
+  width: 100%;
+}
+
+.slick-slide {
+  margin: 0px 1rem;
+}
+
+.slick-prev {
+  left: 0;
+}
+
+.slick-next {
+  right: 0;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  color: #ABADB0;
+  font-size: 1.5rem;
 }
 
 .svg-training {

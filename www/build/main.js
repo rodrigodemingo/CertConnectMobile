@@ -6226,7 +6226,7 @@ var SystemJsNgModuleLoader = (function () {
         if (exportName === undefined) {
             exportName = 'default';
         }
-        return __webpack_require__(106)(module)
+        return __webpack_require__(105)(module)
             .then(function (module) { return module[exportName]; })
             .then(function (type) { return checkNotEmpty(type, module, exportName); })
             .then(function (type) { return _this._compiler.compileModuleAsync(type); });
@@ -6242,7 +6242,7 @@ var SystemJsNgModuleLoader = (function () {
             exportName = 'default';
             factoryClassSuffix = '';
         }
-        return __webpack_require__(106)(this._config.factoryPathPrefix + module + this._config.factoryPathSuffix)
+        return __webpack_require__(105)(this._config.factoryPathPrefix + module + this._config.factoryPathSuffix)
             .then(function (module) { return module[exportName + factoryClassSuffix]; })
             .then(function (factory) { return checkNotEmpty(factory, module, exportName); });
     };
@@ -44840,9 +44840,8 @@ function TransitionController_tsickle_Closure_declarations() {
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(14);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__hr_hr__ = __webpack_require__(100);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__operations_operations__ = __webpack_require__(102);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return HomePage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__salary_certificate_salary_certificate__ = __webpack_require__(104);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return HrPage; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -44855,30 +44854,28 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
-
-var HomePage = (function () {
-    function HomePage(navCtrl) {
+var HrPage = (function () {
+    function HrPage(navCtrl, navParams) {
         this.navCtrl = navCtrl;
+        this.navParams = navParams;
     }
-    HomePage.prototype.ionViewDidLoad = function () {
-        console.log(localStorage.getItem("userToken"));
+    HrPage.prototype.ionViewDidLoad = function () {
+        console.log('ionViewDidLoad HrPage');
     };
-    HomePage.prototype.hrPage = function () {
-        this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_2__hr_hr__["a" /* HrPage */]);
+    HrPage.prototype.salaryCertificate = function () {
+        this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_2__salary_certificate_salary_certificate__["a" /* SalaryCertificatePage */]);
     };
-    HomePage.prototype.operationsPage = function () {
-        this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_3__operations_operations__["a" /* OperationsPage */]);
-    };
-    return HomePage;
+    return HrPage;
 }());
-HomePage = __decorate([
+HrPage = __decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* IonicPage */])(),
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_5" /* Component */])({
-        selector: 'page-home',template:/*ion-inline-start:"E:\CERT Connect - JK\CertConnectMobile\src\pages\home\home.html"*/'<ion-header>\n    <ion-navbar>\n        <ion-title>\n            Dashboard\n        </ion-title>\n    </ion-navbar>\n</ion-header>\n<ion-content>\n    <ion-grid>\n        <ion-row>\n            <ion-col col-12>\n                <ion-item class="bg-pattern">\n                    <ion-avatar>\n                        <img src="assets/svg/Avatar.svg">\n                    </ion-avatar>\n                    <h2>Welcome John Doe</h2>\n                    <p>john_doe@gmail.com</p>\n                </ion-item>\n            </ion-col>\n        </ion-row>\n    </ion-grid>\n    <ion-grid>\n        <ion-row>\n            <ion-col class="box-gray">\n                <button ion-button clear color="dark">\n                    <div class="box">\n                        <ion-badge>02</ion-badge>\n                        <div class="svg-icon svg-training"></div>\n                        <div class="box-subtitle">Training</div>\n                    </div>\n                </button>\n            </ion-col>\n            <ion-col>\n                <button ion-button clear color="dark">\n                <div class="box">\n                    <ion-badge>02</ion-badge>\n                    <div class="svg-icon svg-meter"></div>\n                    <div class="box-subtitle">Meter</div>\n                </div>\n                </button>\n            </ion-col>\n            <ion-col class="box-gray">\n                <button ion-button clear color="dark">\n                <div class="box">\n                    <ion-badge>02</ion-badge>\n                    <div class="svg-icon svg-driver-care"></div>\n                    <div class="box-subtitle">Driver Care</div>\n                </div>\n                </button>\n            </ion-col>\n        </ion-row>\n        <ion-row>\n            <ion-col>\n                <button ion-button clear color="dark" (click)=\'hrPage();\'>\n                <div class="box">\n                    <ion-badge>02</ion-badge>\n                    <div class="svg-icon svg-hr"></div>\n                    <div class="box-subtitle">HR</div>\n                </div>\n                </button>\n            </ion-col>\n            <ion-col class="box-gray">\n                <button ion-button clear color="dark">\n                <div class="box">\n                    <ion-badge>02</ion-badge>\n                    <div class="svg-icon svg-finance"></div>\n                    <div class="box-subtitle">Finance</div>\n                </div>\n                </button>\n            </ion-col>\n            <ion-col>\n                <button ion-button clear color="dark" (click)=\'operationsPage();\'>\n                <div class="box">\n                    <ion-badge>02</ion-badge>\n                    <div class="svg-icon svg-operations"></div>\n                    <div class="box-subtitle">Operations</div>\n                </div>\n                </button>\n            </ion-col>\n        </ion-row>\n    </ion-grid>\n</ion-content>'/*ion-inline-end:"E:\CERT Connect - JK\CertConnectMobile\src\pages\home\home.html"*/
+        selector: 'page-hr',template:/*ion-inline-start:"E:\CERT Connect - JK\CertConnectMobile\src\pages\hr\hr.html"*/'<ion-header>\n\n    <ion-navbar>\n        <ion-title>HR Department</ion-title>\n    </ion-navbar>\n</ion-header>\n<ion-content>\n    <ion-toolbar id="top-menu">\n        <ion-segment class="regular slider">\n            <ion-segment-button>\n                <div class="box">\n                    <div class="svg-icon svg-driver-care"></div>\n                    <p>Diver Care</p>\n                </div>\n            </ion-segment-button>\n            <ion-segment-button>\n                <div class="box box-active">\n                    <div class="svg-icon svg-hr"></div>\n                    <p>HR</p>\n                </div>\n            </ion-segment-button>\n            <ion-segment-button>\n                <div class="box">\n                    <div class="svg-icon svg-finance"></div>\n                    <p>Finance</p>\n                </div>\n            </ion-segment-button>\n            <ion-segment-button>\n                <div class="box">\n                    <div class="svg-icon svg-operations"></div>\n                    <p>Operations</p>\n                </div>\n            </ion-segment-button>\n            <ion-segment-button>\n                <div class="box">\n                    <div class="svg-icon svg-training"></div>\n                    <p>Training</p>\n                </div>\n            </ion-segment-button>\n            <ion-segment-button>\n                <div class="box">\n                    <div class="svg-icon svg-meter"></div>\n                    <p>Meter</p>\n                </div>\n            </ion-segment-button>\n        </ion-segment>\n    </ion-toolbar>\n    <ion-content id="grid-menu">\n        <ion-grid>\n            <ion-row>\n                <ion-col>\n                    <button ion-button clear color="dark">\n                    <div class="box">\n                      <!--<ion-badge>02</ion-badge>-->\n                      <div class="circle">\n                          <div class="svg-icon svg-hr-holidays"></div>\n                      </div>\n                      <div class="box-subtitle">Holidays</div>\n                    </div>\n                </button>\n                </ion-col>\n                <ion-col>\n                    <button ion-button clear color="dark" (click)="salaryCertificate();">\n                <div class="box">\n                    <!--<ion-badge>02</ion-badge>-->\n                    <div class="circle">\n                        <div class="svg-icon svg-hr-salary-certificate"></div>\n                    </div>\n                    <div class="box-subtitle">Salary Certificate</div>\n                </div>\n                </button>\n                </ion-col>\n                <ion-col>\n                    <button ion-button clear color="dark">\n                <div class="box">\n                    <!--<ion-badge>02</ion-badge>-->\n                    <div class="circle">\n                    <div class="svg-icon svg-hr-leave-request"></div>\n                    </div>\n                    <div class="box-subtitle">Leave Request</div>\n                </div>\n                </button>\n                </ion-col>\n            </ion-row>\n            <ion-row>\n                <ion-col>\n                    <button ion-button clear color="dark">\n                <div class="box">\n                    <!--<ion-badge>02</ion-badge>-->\n                    <div class="circle">\n                    <div class="svg-icon svg-hr-enquiries"></div>\n                    </div>\n                    <div class="box-subtitle">Enquiries</div>\n                </div>\n                </button>\n                </ion-col>\n                <ion-col>\n                    <button ion-button clear color="dark">\n                <div class="box">\n                    <!--<ion-badge>02</ion-badge>-->\n                    <div class="circle">\n                     <div class="svg-icon svg-hr-emergency"></div>\n                    </div>\n                    <div class="box-subtitle">Emergency</div>\n                </div>\n                </button>\n                </ion-col>\n                <ion-col>\n                    <button ion-button clear color="dark">\n                <div class="box">\n                    <!--<ion-badge>02</ion-badge>-->\n                    <div class="circle">\n                    <div class="svg-icon svg-hr-sick-leave"></div>\n                    </div>\n                    <div class="box-subtitle">Sick Leave</div>\n                </div>\n                </button>\n                </ion-col>\n            </ion-row>\n            <ion-row>\n                <ion-col>\n                    <button ion-button clear color="dark">\n                <div class="box">\n                    <!--<ion-badge>02</ion-badge>-->\n                    <div class="circle">\n                    <div class="svg-icon svg-hr-noc"></div>\n                    </div>\n                    <div class="box-subtitle">N.O.C.</div>\n                </div>\n                </button>\n                </ion-col>\n                <ion-col>\n                    <button ion-button clear color="dark">\n                <div class="box">\n                    <!--<ion-badge>02</ion-badge>-->\n                    <div class="circle">\n                    <div class="svg-icon svg-hr-passport"></div>\n                    </div>\n                    <div class="box-subtitle">Passport</div>\n                </div>\n                </button>\n                </ion-col>\n                <ion-col>\n                    <button ion-button clear color="dark">\n                <div class="box">\n                    <!--<ion-badge>02</ion-badge>-->\n                    <div class="circle">\n                    <div class="svg-icon svg-hr-accomodation"></div>\n                    </div>\n                    <div class="box-subtitle">Accommodation</div>\n                </div>\n                </button>\n                </ion-col>\n            </ion-row>\n        </ion-grid>\n    </ion-content>\n</ion-content>'/*ion-inline-end:"E:\CERT Connect - JK\CertConnectMobile\src\pages\hr\hr.html"*/,
     }),
-    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */]])
-], HomePage);
+    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */]])
+], HrPage);
 
-//# sourceMappingURL=home.js.map
+//# sourceMappingURL=hr.js.map
 
 /***/ }),
 /* 48 */
@@ -58060,52 +58057,8 @@ exports.isFunction = isFunction;
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(14);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__salary_certificate_salary_certificate__ = __webpack_require__(105);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return HrPage; });
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-
-var HrPage = (function () {
-    function HrPage(navCtrl, navParams) {
-        this.navCtrl = navCtrl;
-        this.navParams = navParams;
-    }
-    HrPage.prototype.ionViewDidLoad = function () {
-        console.log('ionViewDidLoad HrPage');
-    };
-    HrPage.prototype.salaryCertificate = function () {
-        this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_2__salary_certificate_salary_certificate__["a" /* SalaryCertificatePage */]);
-    };
-    return HrPage;
-}());
-HrPage = __decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* IonicPage */])(),
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_5" /* Component */])({
-        selector: 'page-hr',template:/*ion-inline-start:"E:\CERT Connect - JK\CertConnectMobile\src\pages\hr\hr.html"*/'<ion-header>\n\n    <ion-navbar>\n        <ion-title>HR Department</ion-title>\n    </ion-navbar>\n    <ion-toolbar id="top-menu">\n        <ion-segment color="dark">\n            <ion-segment-button>\n                <div class="box">\n                    <div class="svg-icon svg-driver-care"></div>\n                    <p>Diver Care</p>\n                </div>\n            </ion-segment-button>\n            <ion-segment-button>\n                <div class="box box-active">\n                    <div class="svg-icon svg-hr"></div>\n                    <p>HR</p>\n                </div>\n            </ion-segment-button>\n            <ion-segment-button>\n                <div class="box">\n                    <div class="svg-icon svg-finance"></div>\n                    <p>Finance</p>\n                </div>\n            </ion-segment-button>\n            <ion-segment-button>\n                <div class="box">\n                    <div class="svg-icon svg-operations"></div>\n                    <p>Operations</p>\n                </div>\n            </ion-segment-button>\n            <ion-segment-button>\n                <div class="box">\n                    <div class="svg-icon svg-training"></div>\n                    <p>Training</p>\n                </div>\n            </ion-segment-button>\n            <ion-segment-button>\n                <div class="box">\n                    <div class="svg-icon svg-meter"></div>\n                    <p>Meter</p>\n                </div>\n            </ion-segment-button>\n        </ion-segment>\n    </ion-toolbar>\n</ion-header>\n\n<ion-content id="grid-menu">\n    <ion-grid>\n        <ion-row>\n            <ion-col>\n                <button ion-button clear color="dark">\n                    <div class="box">\n                      <!--<ion-badge>02</ion-badge>-->\n                      <div class="circle">\n                          <div class="svg-icon svg-hr-holidays"></div>\n                      </div>\n                      <div class="box-subtitle">Holidays</div>\n                    </div>\n                </button>\n            </ion-col>\n            <ion-col>\n                <button ion-button clear color="dark" (click)="salaryCertificate();">\n                <div class="box">\n                    <!--<ion-badge>02</ion-badge>-->\n                    <div class="circle">\n                        <div class="svg-icon svg-hr-salary-certificate"></div>\n                    </div>\n                    <div class="box-subtitle">Salary Certificate</div>\n                </div>\n                </button>\n            </ion-col>\n            <ion-col>\n                <button ion-button clear color="dark">\n                <div class="box">\n                    <!--<ion-badge>02</ion-badge>-->\n                    <div class="circle">\n                    <div class="svg-icon svg-hr-leave-request"></div>\n                    </div>\n                    <div class="box-subtitle">Leave Request</div>\n                </div>\n                </button>\n            </ion-col>\n        </ion-row>\n        <ion-row>\n            <ion-col>\n                <button ion-button clear color="dark">\n                <div class="box">\n                    <!--<ion-badge>02</ion-badge>-->\n                    <div class="circle">\n                    <div class="svg-icon svg-hr-enquiries"></div>\n                    </div>\n                    <div class="box-subtitle">Enquiries</div>\n                </div>\n                </button>\n            </ion-col>\n            <ion-col>\n                <button ion-button clear color="dark">\n                <div class="box">\n                    <!--<ion-badge>02</ion-badge>-->\n                    <div class="circle">\n                     <div class="svg-icon svg-hr-emergency"></div>\n                    </div>\n                    <div class="box-subtitle">Emergency</div>\n                </div>\n                </button>\n            </ion-col>\n            <ion-col>\n                <button ion-button clear color="dark">\n                <div class="box">\n                    <!--<ion-badge>02</ion-badge>-->\n                    <div class="circle">\n                    <div class="svg-icon svg-hr-sick-leave"></div>\n                    </div>\n                    <div class="box-subtitle">Sick Leave</div>\n                </div>\n                </button>\n            </ion-col>\n        </ion-row>\n        <ion-row>\n            <ion-col>\n                <button ion-button clear color="dark">\n                <div class="box">\n                    <!--<ion-badge>02</ion-badge>-->\n                    <div class="circle">\n                    <div class="svg-icon svg-hr-noc"></div>\n                    </div>\n                    <div class="box-subtitle">N.O.C.</div>\n                </div>\n                </button>\n            </ion-col>\n            <ion-col>\n                <button ion-button clear color="dark">\n                <div class="box">\n                    <!--<ion-badge>02</ion-badge>-->\n                    <div class="circle">\n                    <div class="svg-icon svg-hr-passport"></div>\n                    </div>\n                    <div class="box-subtitle">Passport</div>\n                </div>\n                </button>\n            </ion-col>\n            <ion-col>\n                <button ion-button clear color="dark">\n                <div class="box">\n                    <!--<ion-badge>02</ion-badge>-->\n                    <div class="circle">\n                    <div class="svg-icon svg-hr-accomodation"></div>\n                    </div>\n                    <div class="box-subtitle">Accommodation</div>\n                </div>\n                </button>\n            </ion-col>\n        </ion-row>\n    </ion-grid>\n</ion-content>'/*ion-inline-end:"E:\CERT Connect - JK\CertConnectMobile\src\pages\hr\hr.html"*/,
-    }),
-    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */]])
-], HrPage);
-
-//# sourceMappingURL=hr.js.map
-
-/***/ }),
-/* 101 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(14);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__register_register__ = __webpack_require__(103);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__home_home__ = __webpack_require__(47);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__register_register__ = __webpack_require__(102);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__home_home__ = __webpack_require__(106);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_forms__ = __webpack_require__(12);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__angular_http__ = __webpack_require__(48);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_rxjs_add_operator_map__ = __webpack_require__(192);
@@ -58190,7 +58143,7 @@ LoginPage = __decorate([
 //# sourceMappingURL=login.js.map
 
 /***/ }),
-/* 102 */
+/* 101 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -58221,7 +58174,7 @@ var OperationsPage = (function () {
 OperationsPage = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* IonicPage */])(),
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_5" /* Component */])({
-        selector: 'page-operations',template:/*ion-inline-start:"E:\CERT Connect - JK\CertConnectMobile\src\pages\operations\operations.html"*/'<ion-header>\n    <ion-navbar>\n        <ion-title>Operations Department</ion-title>\n    </ion-navbar>\n    <ion-toolbar id="top-menu">\n        <ion-segment color="dark">\n            <ion-segment-button>\n                <div class="box">\n                    <div class="svg-icon svg-finance"></div>\n                    <p>Finance</p>\n                </div>\n            </ion-segment-button>\n            <ion-segment-button>\n                <div class="box box-active">\n                    <div class="svg-icon svg-operations"></div>\n                    <p>Operations</p>\n                </div>\n            </ion-segment-button>\n            <ion-segment-button>\n                <div class="box">\n                    <div class="svg-icon svg-training"></div>\n                    <p>Training</p>\n                </div>\n            </ion-segment-button>\n            <ion-segment-button>\n                <div class="box">\n                    <div class="svg-icon svg-meter"></div>\n                    <p>Meter</p>\n                </div>\n            </ion-segment-button>\n            <ion-segment-button>\n                <div class="box">\n                    <div class="svg-icon svg-driver-care"></div>\n                    <p>Diver Care</p>\n                </div>\n            </ion-segment-button>\n            <ion-segment-button>\n                <div class="box">\n                    <div class="svg-icon svg-hr"></div>\n                    <p>HR</p>\n                </div>\n            </ion-segment-button>\n        </ion-segment>\n    </ion-toolbar>\n</ion-header>\n\n<ion-content id="grid-menu">\n    <ion-grid>\n        <ion-row>\n            <ion-col>\n                <button ion-button clear color="dark">\n                    <div class="box">\n                      <!--<ion-badge>02</ion-badge>-->\n                      <div class="circle">\n                       <div class="svg-icon svg-operations-car-accident"></div>\n                      </div>\n                      <div class="box-subtitle">Accident</div>\n                    </div>\n                </button>\n            </ion-col>\n            <ion-col>\n                <button ion-button clear color="dark">\n                <div class="box">\n                    <!--<ion-badge>02</ion-badge>-->\n                    <div class="circle">\n                    <div class="svg-icon svg-operations-vehicle-change"></div>\n                    </div>\n                    <div class="box-subtitle">Vehicle change</div>\n                </div>\n                </button>\n            </ion-col>\n            <ion-col>\n                <button ion-button clear color="dark">\n                <div class="box">\n                    <!--<ion-badge>02</ion-badge>-->\n                    <div class="circle">\n                    <div class="svg-icon svg-operations-maintenance"></div>\n                    </div>\n                    <div class="box-subtitle">Maintenance</div>\n                </div>\n                </button>\n            </ion-col>\n        </ion-row>\n        <ion-row>\n            <ion-col>\n                <button ion-button clear color="dark">\n                <div class="box">\n                    <!--<ion-badge>02</ion-badge>-->\n                    <div class="circle">\n                    <div class="svg-icon svg-operations-shift-change"></div>\n                    </div>\n                    <div class="box-subtitle">Shift Schedule</div>\n                </div>\n                </button>\n            </ion-col>\n            <ion-col></ion-col>\n            <ion-col></ion-col>\n        </ion-row>\n    </ion-grid>\n</ion-content>'/*ion-inline-end:"E:\CERT Connect - JK\CertConnectMobile\src\pages\operations\operations.html"*/,
+        selector: 'page-operations',template:/*ion-inline-start:"E:\CERT Connect - JK\CertConnectMobile\src\pages\operations\operations.html"*/'<ion-header>\n    <ion-navbar>\n        <ion-title>Operations Department</ion-title>\n    </ion-navbar>\n    <ion-toolbar id="top-menu">\n        <ion-segment color="dark">\n            <ion-segment-button>\n                <div class="box">\n                    <div class="svg-icon svg-finance"></div>\n                    <p>Finance</p>\n                </div>\n            </ion-segment-button>\n            <ion-segment-button>\n                <div class="box box-active">\n                    <div class="svg-icon svg-operations"></div>\n                    <p>Operations</p>\n                </div>\n            </ion-segment-button>\n            <ion-segment-button>\n                <div class="box">\n                    <div class="svg-icon svg-training"></div>\n                    <p>Training</p>\n                </div>\n            </ion-segment-button>\n            <ion-segment-button>\n                <div class="box">\n                    <div class="svg-icon svg-meter"></div>\n                    <p>Meter</p>\n                </div>\n            </ion-segment-button>\n            <ion-segment-button>\n                <div class="box">\n                    <div class="svg-icon svg-driver-care"></div>\n                    <p>Diver Care</p>\n                </div>\n            </ion-segment-button>\n            <ion-segment-button>\n                <div class="box">\n                    <div class="svg-icon svg-hr"></div>\n                    <p>HR</p>\n                </div>\n            </ion-segment-button>\n        </ion-segment>\n    </ion-toolbar>\n</ion-header>\n<!--<ion-header>\n    <ion-navbar>\n        <ion-title>Operations Department</ion-title>\n    </ion-navbar>\n    <ion-toolbar id="top-menu">\n        <ion-segment color="dark">\n            <ion-segment-button>\n                <div class="box">\n                    <div class="svg-icon svg-finance"></div>\n                    <p>Finance</p>\n                </div>\n            </ion-segment-button>\n            <ion-segment-button>\n                <div class="box box-active">\n                    <div class="svg-icon svg-operations"></div>\n                    <p>Operations</p>\n                </div>\n            </ion-segment-button>\n            <ion-segment-button>\n                <div class="box">\n                    <div class="svg-icon svg-training"></div>\n                    <p>Training</p>\n                </div>\n            </ion-segment-button>\n            <ion-segment-button>\n                <div class="box">\n                    <div class="svg-icon svg-meter"></div>\n                    <p>Meter</p>\n                </div>\n            </ion-segment-button>\n            <ion-segment-button>\n                <div class="box">\n                    <div class="svg-icon svg-driver-care"></div>\n                    <p>Diver Care</p>\n                </div>\n            </ion-segment-button>\n            <ion-segment-button>\n                <div class="box">\n                    <div class="svg-icon svg-hr"></div>\n                    <p>HR</p>\n                </div>\n            </ion-segment-button>\n        </ion-segment>\n    </ion-toolbar>\n</ion-header>-->\n\n<ion-content id="grid-menu">\n    <ion-grid>\n        <ion-row>\n            <ion-col>\n                <button ion-button clear color="dark">\n                    <div class="box">\n                      <!--<ion-badge>02</ion-badge>-->\n                      <div class="circle">\n                       <div class="svg-icon svg-operations-car-accident"></div>\n                      </div>\n                      <div class="box-subtitle">Accident</div>\n                    </div>\n                </button>\n            </ion-col>\n            <ion-col>\n                <button ion-button clear color="dark">\n                <div class="box">\n                    <!--<ion-badge>02</ion-badge>-->\n                    <div class="circle">\n                    <div class="svg-icon svg-operations-vehicle-change"></div>\n                    </div>\n                    <div class="box-subtitle">Vehicle change</div>\n                </div>\n                </button>\n            </ion-col>\n            <ion-col>\n                <button ion-button clear color="dark">\n                <div class="box">\n                    <!--<ion-badge>02</ion-badge>-->\n                    <div class="circle">\n                    <div class="svg-icon svg-operations-maintenance"></div>\n                    </div>\n                    <div class="box-subtitle">Maintenance</div>\n                </div>\n                </button>\n            </ion-col>\n        </ion-row>\n        <ion-row>\n            <ion-col>\n                <button ion-button clear color="dark">\n                <div class="box">\n                    <!--<ion-badge>02</ion-badge>-->\n                    <div class="circle">\n                    <div class="svg-icon svg-operations-shift-change"></div>\n                    </div>\n                    <div class="box-subtitle">Shift Schedule</div>\n                </div>\n                </button>\n            </ion-col>\n            <ion-col></ion-col>\n            <ion-col></ion-col>\n        </ion-row>\n    </ion-grid>\n</ion-content>'/*ion-inline-end:"E:\CERT Connect - JK\CertConnectMobile\src\pages\operations\operations.html"*/,
     }),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */]])
 ], OperationsPage);
@@ -58229,7 +58182,7 @@ OperationsPage = __decorate([
 //# sourceMappingURL=operations.js.map
 
 /***/ }),
-/* 103 */
+/* 102 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -58237,7 +58190,7 @@ OperationsPage = __decorate([
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(14);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_forms__ = __webpack_require__(12);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_http__ = __webpack_require__(48);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__login_login__ = __webpack_require__(101);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__login_login__ = __webpack_require__(100);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_rxjs_add_operator_map__ = __webpack_require__(192);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_rxjs_add_operator_map___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_rxjs_add_operator_map__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return RegisterPage; });
@@ -58315,7 +58268,7 @@ RegisterPage = __decorate([
 //# sourceMappingURL=register.js.map
 
 /***/ }),
-/* 104 */
+/* 103 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -58360,13 +58313,13 @@ SalaryCertificateRequestPage = __decorate([
 //# sourceMappingURL=salary-certificate-request.js.map
 
 /***/ }),
-/* 105 */
+/* 104 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(14);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__salary_certificate_request_salary_certificate_request__ = __webpack_require__(104);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__salary_certificate_request_salary_certificate_request__ = __webpack_require__(103);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SalaryCertificatePage; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -58404,7 +58357,7 @@ SalaryCertificatePage = __decorate([
 //# sourceMappingURL=salary-certificate.js.map
 
 /***/ }),
-/* 106 */
+/* 105 */
 /***/ (function(module, exports) {
 
 function webpackEmptyContext(req) {
@@ -58413,8 +58366,55 @@ function webpackEmptyContext(req) {
 webpackEmptyContext.keys = function() { return []; };
 webpackEmptyContext.resolve = webpackEmptyContext;
 module.exports = webpackEmptyContext;
-webpackEmptyContext.id = 106;
+webpackEmptyContext.id = 105;
 
+
+/***/ }),
+/* 106 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(14);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__hr_hr__ = __webpack_require__(47);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__operations_operations__ = __webpack_require__(101);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return HomePage; });
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+var HomePage = (function () {
+    function HomePage(navCtrl) {
+        this.navCtrl = navCtrl;
+    }
+    HomePage.prototype.ionViewDidLoad = function () {
+        console.log(localStorage.getItem("userToken"));
+    };
+    HomePage.prototype.hrPage = function () {
+        this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_2__hr_hr__["a" /* HrPage */]);
+    };
+    HomePage.prototype.operationsPage = function () {
+        this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_3__operations_operations__["a" /* OperationsPage */]);
+    };
+    return HomePage;
+}());
+HomePage = __decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_5" /* Component */])({
+        selector: 'page-home',template:/*ion-inline-start:"E:\CERT Connect - JK\CertConnectMobile\src\pages\home\home.html"*/'<ion-header>\n    <ion-navbar>\n        <ion-title>\n            Dashboard\n        </ion-title>\n    </ion-navbar>\n</ion-header>\n<ion-content>\n    <ion-grid>\n        <ion-row>\n            <ion-col col-12>\n                <ion-item class="bg-pattern">\n                    <ion-avatar>\n                        <img src="assets/svg/Avatar.svg">\n                    </ion-avatar>\n                    <h2>Welcome John Doe</h2>\n                    <p>john_doe@gmail.com</p>\n                </ion-item>\n            </ion-col>\n        </ion-row>\n    </ion-grid>\n    <ion-grid>\n        <ion-row>\n            <ion-col class="box-gray">\n                <button ion-button clear color="dark">\n                    <div class="box">\n                        <ion-badge>02</ion-badge>\n                        <div class="svg-icon svg-training"></div>\n                        <div class="box-subtitle">Training</div>\n                    </div>\n                </button>\n            </ion-col>\n            <ion-col>\n                <button ion-button clear color="dark">\n                <div class="box">\n                    <ion-badge>02</ion-badge>\n                    <div class="svg-icon svg-meter"></div>\n                    <div class="box-subtitle">Meter</div>\n                </div>\n                </button>\n            </ion-col>\n            <ion-col class="box-gray">\n                <button ion-button clear color="dark">\n                <div class="box">\n                    <ion-badge>02</ion-badge>\n                    <div class="svg-icon svg-driver-care"></div>\n                    <div class="box-subtitle">Driver Care</div>\n                </div>\n                </button>\n            </ion-col>\n        </ion-row>\n        <ion-row>\n            <ion-col>\n                <button ion-button clear color="dark" (click)=\'hrPage();\'>\n                <div class="box">\n                    <ion-badge>02</ion-badge>\n                    <div class="svg-icon svg-hr"></div>\n                    <div class="box-subtitle">HR</div>\n                </div>\n                </button>\n            </ion-col>\n            <ion-col class="box-gray">\n                <button ion-button clear color="dark">\n                <div class="box">\n                    <ion-badge>02</ion-badge>\n                    <div class="svg-icon svg-finance"></div>\n                    <div class="box-subtitle">Finance</div>\n                </div>\n                </button>\n            </ion-col>\n            <ion-col>\n                <button ion-button clear color="dark" (click)=\'operationsPage();\'>\n                <div class="box">\n                    <ion-badge>02</ion-badge>\n                    <div class="svg-icon svg-operations"></div>\n                    <div class="box-subtitle">Operations</div>\n                </div>\n                </button>\n            </ion-col>\n        </ion-row>\n    </ion-grid>\n</ion-content>'/*ion-inline-end:"E:\CERT Connect - JK\CertConnectMobile\src\pages\home\home.html"*/
+    }),
+    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */]])
+], HomePage);
+
+//# sourceMappingURL=home.js.map
 
 /***/ }),
 /* 107 */
@@ -77099,14 +77099,14 @@ webpackAsyncContext.id = 201;
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(109);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ionic_native_status_bar__ = __webpack_require__(110);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__app_component__ = __webpack_require__(205);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__pages_home_home__ = __webpack_require__(47);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__pages_login_login__ = __webpack_require__(101);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__pages_home_home__ = __webpack_require__(106);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__pages_login_login__ = __webpack_require__(100);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__pages_splash_screen_splash_screen__ = __webpack_require__(204);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__pages_register_register__ = __webpack_require__(103);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__pages_hr_hr__ = __webpack_require__(100);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__pages_salary_certificate_salary_certificate__ = __webpack_require__(105);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__pages_salary_certificate_request_salary_certificate_request__ = __webpack_require__(104);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__pages_operations_operations__ = __webpack_require__(102);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__pages_register_register__ = __webpack_require__(102);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__pages_hr_hr__ = __webpack_require__(47);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__pages_salary_certificate_salary_certificate__ = __webpack_require__(104);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__pages_salary_certificate_request_salary_certificate_request__ = __webpack_require__(103);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__pages_operations_operations__ = __webpack_require__(101);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__angular_http__ = __webpack_require__(48);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppModule; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -77424,7 +77424,7 @@ SplashScreenPage = __decorate([
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(14);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__ = __webpack_require__(110);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(109);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pages_home_home__ = __webpack_require__(47);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pages_hr_hr__ = __webpack_require__(47);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MyApp; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -77442,7 +77442,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 var MyApp = (function () {
     function MyApp(platform, statusBar, splashScreen) {
-        this.rootPage = __WEBPACK_IMPORTED_MODULE_4__pages_home_home__["a" /* HomePage */];
+        this.rootPage = __WEBPACK_IMPORTED_MODULE_4__pages_hr_hr__["a" /* HrPage */];
         platform.ready().then(function () {
             // Okay, so the platform is ready and our plugins are available.
             // Here you can do any higher level native things you might need.

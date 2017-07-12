@@ -85,25 +85,15 @@ ion-navbar .button-inner {
 }
 
 // Top Menu - Header
+ion-toolbar#top-menu {
+    height: 10rem;
+}
+
 #top-menu .segment-button {
     height: 10rem;
     border: none;
     line-height: 1.5rem;
-}
-
-#top-menu .toolbar-content {
-    overflow-x: scroll;
-    -webkit-overflow-scrolling: touch;
-    -ms-overflow-style: none; // IE 10+ (Hide Scrollbar)
-    overflow: -moz-scrollbars-none; // Firefox (Hide Scrollbar)
-}
-
-#top-menu .toolbar-content::-webkit-scrollbar {
-    display: none; // Safari and Chrome (Hide Scrollbar)
-}
-
-#top-menu .segment {
-    width: 200%;
+    max-width: 100%;
 }
 
 #top-menu .box {
@@ -111,7 +101,6 @@ ion-navbar .button-inner {
 }
 
 #top-menu .box p {
-    font-size: 1.4rem;
     color: map-get($colors, disable);
 }
 
@@ -133,6 +122,29 @@ ion-navbar .button-inner {
     .svg-icon {
         background-color: map-get($colors, secondary);
     }
+}
+
+// Slick Slider http://kenwheeler.github.io/slick/
+.slider {
+    width: 100%;
+}
+
+.slick-slide {
+    margin: 0px 1rem;
+}
+
+.slick-prev {
+    left: 0;
+}
+
+.slick-next {
+    right: 0;
+}
+
+.slick-prev:before,
+.slick-next:before {
+    color: map-get($colors, disable);
+    font-size: 1.5rem;
 }
 
 // SVG Dashboard Home Icons
