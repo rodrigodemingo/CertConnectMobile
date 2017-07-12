@@ -53272,14 +53272,15 @@ ion-navbar .button-inner {
   border: none;
 }
 
-ion-toolbar#top-menu .toolbar {
-  height: 15rem;
+ion-toolbar#top-menu {
+  height: 10rem;
 }
 
 #top-menu .segment-button {
   height: 10rem;
   border: none;
   line-height: 1.5rem;
+  max-width: 100%;
 }
 
 #top-menu .box {
