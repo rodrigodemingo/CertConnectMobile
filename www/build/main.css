@@ -53429,6 +53429,11 @@ ion-toolbar#top-menu {
   mask: url(../assets/svg/shiftChange.svg) no-repeat center;
 }
 
+.svg-training-maintenance {
+  -webkit-mask: url(../assets/svg/maintenance.svg) no-repeat center;
+  mask: url(../assets/svg/maintenance.svg) no-repeat center;
+}
+
 page-home .grid {
   padding: 0;
 }
