@@ -1,14 +1,14 @@
 webpackJsonp([3],{
 
-/***/ 272:
+/***/ 280:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(14);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__register__ = __webpack_require__(103);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "RegisterPageModule", function() { return RegisterPageModule; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__driver_care__ = __webpack_require__(281);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "DriverCarePageModule", function() { return DriverCarePageModule; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -18,26 +18,26 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
-var RegisterPageModule = (function () {
-    function RegisterPageModule() {
+var DriverCarePageModule = (function () {
+    function DriverCarePageModule() {
     }
-    return RegisterPageModule;
+    return DriverCarePageModule;
 }());
-RegisterPageModule = __decorate([
+DriverCarePageModule = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["a" /* NgModule */])({
         declarations: [
-            __WEBPACK_IMPORTED_MODULE_2__register__["a" /* RegisterPage */],
+            __WEBPACK_IMPORTED_MODULE_2__driver_care__["a" /* DriverCarePage */],
         ],
         imports: [
-            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__register__["a" /* RegisterPage */]),
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__driver_care__["a" /* DriverCarePage */]),
         ],
         exports: [
-            __WEBPACK_IMPORTED_MODULE_2__register__["a" /* RegisterPage */]
+            __WEBPACK_IMPORTED_MODULE_2__driver_care__["a" /* DriverCarePage */]
         ]
     })
-], RegisterPageModule);
+], DriverCarePageModule);
 
-//# sourceMappingURL=register.module.js.map
+//# sourceMappingURL=driver-care.module.js.map
 
 /***/ })
 

@@ -1,0 +1,156 @@
+<ion-header>
+
+    <ion-navbar>
+        <ion-title>Training Department</ion-title>
+    </ion-navbar>
+    <ion-toolbar id="top-menu">
+        <ion-segment class="regular slider">
+            <ion-segment-button>
+                <div class="box">
+                    <div class="svg-icon svg-operations"></div>
+                    <p>Operations</p>
+                </div>
+            </ion-segment-button>
+            <ion-segment-button>
+                <div class="box box-active">
+                    <div class="svg-icon svg-training"></div>
+                    <p>Training</p>
+                </div>
+            </ion-segment-button>
+            <ion-segment-button>
+                <div class="box">
+                    <div class="svg-icon svg-meter"></div>
+                    <p>Meter</p>
+                </div>
+            </ion-segment-button>
+            <ion-segment-button>
+                <div class="box">
+                    <div class="svg-icon svg-driver-care"></div>
+                    <p>Diver Care</p>
+                </div>
+            </ion-segment-button>
+            <ion-segment-button>
+                <div class="box">
+                    <div class="svg-icon svg-hr"></div>
+                    <p>HR</p>
+                </div>
+            </ion-segment-button>
+            <ion-segment-button>
+                <div class="box">
+                    <div class="svg-icon svg-finance"></div>
+                    <p>Finance</p>
+                </div>
+            </ion-segment-button>
+        </ion-segment>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content id="grid-menu">
+    <ion-grid>
+        <ion-row>
+            <ion-col>
+                <button ion-button clear color="dark">
+                    <div class="box">
+                      <!--<ion-badge>02</ion-badge>-->
+                      <div class="circle">
+                          <div class="svg-icon svg-hr-holidays"></div>
+                      </div>
+                      <div class="box-subtitle">Holidays</div>
+                    </div>
+                </button>
+            </ion-col>
+            <ion-col>
+                <button ion-button clear color="dark" (click)="salaryCertificate();">
+                <div class="box">
+                    <!--<ion-badge>02</ion-badge>-->
+                    <div class="circle">
+                        <div class="svg-icon svg-hr-salary-certificate"></div>
+                    </div>
+                    <div class="box-subtitle">Salary Certificate</div>
+                </div>
+                </button>
+            </ion-col>
+            <ion-col>
+                <button ion-button clear color="dark">
+                <div class="box">
+                    <!--<ion-badge>02</ion-badge>-->
+                    <div class="circle">
+                    <div class="svg-icon svg-hr-leave-request"></div>
+                    </div>
+                    <div class="box-subtitle">Leave Request</div>
+                </div>
+                </button>
+            </ion-col>
+        </ion-row>
+        <ion-row>
+            <ion-col>
+                <button ion-button clear color="dark">
+                <div class="box">
+                    <!--<ion-badge>02</ion-badge>-->
+                    <div class="circle">
+                    <div class="svg-icon svg-hr-enquiries"></div>
+                    </div>
+                    <div class="box-subtitle">Enquiries</div>
+                </div>
+                </button>
+            </ion-col>
+            <ion-col>
+                <button ion-button clear color="dark">
+                <div class="box">
+                    <!--<ion-badge>02</ion-badge>-->
+                    <div class="circle">
+                     <div class="svg-icon svg-hr-emergency"></div>
+                    </div>
+                    <div class="box-subtitle">Emergency</div>
+                </div>
+                </button>
+            </ion-col>
+            <ion-col>
+                <button ion-button clear color="dark">
+                <div class="box">
+                    <!--<ion-badge>02</ion-badge>-->
+                    <div class="circle">
+                    <div class="svg-icon svg-hr-sick-leave"></div>
+                    </div>
+                    <div class="box-subtitle">Sick Leave</div>
+                </div>
+                </button>
+            </ion-col>
+        </ion-row>
+        <ion-row>
+            <ion-col>
+                <button ion-button clear color="dark">
+                <div class="box">
+                    <!--<ion-badge>02</ion-badge>-->
+                    <div class="circle">
+                    <div class="svg-icon svg-hr-noc"></div>
+                    </div>
+                    <div class="box-subtitle">N.O.C.</div>
+                </div>
+                </button>
+            </ion-col>
+            <ion-col>
+                <button ion-button clear color="dark">
+                <div class="box">
+                    <!--<ion-badge>02</ion-badge>-->
+                    <div class="circle">
+                    <div class="svg-icon svg-hr-passport"></div>
+                    </div>
+                    <div class="box-subtitle">Passport</div>
+                </div>
+                </button>
+            </ion-col>
+            <ion-col>
+                <button ion-button clear color="dark">
+                <div class="box">
+                    <!--<ion-badge>02</ion-badge>-->
+                    <div class="circle">
+                    <div class="svg-icon svg-hr-accomodation"></div>
+                    </div>
+                    <div class="box-subtitle">Accommodation</div>
+                </div>
+                </button>
+            </ion-col>
+        </ion-row>
+    </ion-grid>
+</ion-content>

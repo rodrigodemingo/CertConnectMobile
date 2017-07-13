@@ -1,14 +1,14 @@
 webpackJsonp([0],{
 
-/***/ 275:
+/***/ 276:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(14);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__splash_screen__ = __webpack_require__(204);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SplashScreenPageModule", function() { return SplashScreenPageModule; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__training__ = __webpack_require__(277);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "TrainingPageModule", function() { return TrainingPageModule; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -18,26 +18,26 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
-var SplashScreenPageModule = (function () {
-    function SplashScreenPageModule() {
+var TrainingPageModule = (function () {
+    function TrainingPageModule() {
     }
-    return SplashScreenPageModule;
+    return TrainingPageModule;
 }());
-SplashScreenPageModule = __decorate([
+TrainingPageModule = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["a" /* NgModule */])({
         declarations: [
-            __WEBPACK_IMPORTED_MODULE_2__splash_screen__["a" /* SplashScreenPage */],
+            __WEBPACK_IMPORTED_MODULE_2__training__["a" /* TrainingPage */],
         ],
         imports: [
-            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__splash_screen__["a" /* SplashScreenPage */]),
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__training__["a" /* TrainingPage */]),
         ],
         exports: [
-            __WEBPACK_IMPORTED_MODULE_2__splash_screen__["a" /* SplashScreenPage */]
+            __WEBPACK_IMPORTED_MODULE_2__training__["a" /* TrainingPage */]
         ]
     })
-], SplashScreenPageModule);
+], TrainingPageModule);
 
-//# sourceMappingURL=splash-screen.module.js.map
+//# sourceMappingURL=training.module.js.map
 
 /***/ })
 
