@@ -53232,8 +53232,8 @@ ion-navbar .button-inner {
   color: white;
   font-size: 12px;
   position: absolute;
-  top: -20px;
-  right: 10px;
+  top: 20px;
+  right: 30px;
   padding: 9px 8px;
   border-radius: 15px;
 }
@@ -53265,11 +53265,19 @@ ion-navbar .button-inner {
   background-color: #48484A;
   color: #48484A;
   position: relative;
-  top: 2.7rem;
+  top: 2.4rem;
+  height: 3rem;
 }
 
 #grid-menu .item-md.item-block .item-inner {
   border: none;
+}
+
+.svg-icon {
+  height: 3rem;
+  width: 3rem;
+  margin: 0 auto;
+  background-color: #48484A;
 }
 
 ion-toolbar#top-menu {
@@ -53291,13 +53299,9 @@ ion-toolbar#top-menu {
   color: #ABADB0;
 }
 
-.svg-icon {
-  height: 2.5rem;
-  background-color: #48484A;
-}
-
 #top-menu .svg-icon {
   background-color: #ABADB0;
+  width: 2.5rem;
 }
 
 #top-menu .box-active p {
@@ -53429,9 +53433,74 @@ ion-toolbar#top-menu {
   mask: url(../assets/svg/shiftChange.svg) no-repeat center;
 }
 
-.svg-training-maintenance {
-  -webkit-mask: url(../assets/svg/maintenance.svg) no-repeat center;
-  mask: url(../assets/svg/maintenance.svg) no-repeat center;
+.svg-training-driver-list {
+  -webkit-mask: url(../assets/svg/driver_care.svg) no-repeat center;
+  mask: url(../assets/svg/driver_care.svg) no-repeat center;
+}
+
+.svg-training-schedule {
+  -webkit-mask: url(../assets/svg/HR_Leaves.svg) no-repeat center;
+  mask: url(../assets/svg/HR_Leaves.svg) no-repeat center;
+}
+
+.svg-meter-seat-sensor {
+  -webkit-mask: url(../assets/svg/Meter_SeatSensor.svg) no-repeat center;
+  mask: url(../assets/svg/Meter_SeatSensor.svg) no-repeat center;
+}
+
+.svg-meter-roof-light {
+  -webkit-mask: url(../assets/svg/taxi.svg) no-repeat center;
+  mask: url(../assets/svg/taxi.svg) no-repeat center;
+}
+
+.svg-meter-trip {
+  -webkit-mask: url(../assets/svg/Meter_0KmTrip.svg) no-repeat center;
+  mask: url(../assets/svg/Meter_0KmTrip.svg) no-repeat center;
+}
+
+.svg-driver-care-traffic-fines {
+  -webkit-mask: url(../assets/svg/Meter_TrafficFine.svg) no-repeat center;
+  mask: url(../assets/svg/Meter_TrafficFine.svg) no-repeat center;
+}
+
+.svg-driver-care-suspensions {
+  -webkit-mask: url(../assets/svg/Suspensions.svg) no-repeat center;
+  mask: url(../assets/svg/Suspensions.svg) no-repeat center;
+}
+
+.svg-driver-care-complaints {
+  -webkit-mask: url(../assets/svg/Meter_Complaints.svg) no-repeat center;
+  mask: url(../assets/svg/Meter_Complaints.svg) no-repeat center;
+}
+
+.svg-driver-care-black-points {
+  -webkit-mask: url(../assets/svg/Meter_BlackPoints.svg) no-repeat center;
+  mask: url(../assets/svg/Meter_BlackPoints.svg) no-repeat center;
+}
+
+.svg-driver-care-lost-and-found {
+  -webkit-mask: url(../assets/svg/Lost&Found.svg) no-repeat center;
+  mask: url(../assets/svg/Lost&Found.svg) no-repeat center;
+}
+
+.svg-driver-care-penalties {
+  -webkit-mask: url(../assets/svg/Penalties.svg) no-repeat center;
+  mask: url(../assets/svg/Penalties.svg) no-repeat center;
+}
+
+.svg-finance-earnings {
+  -webkit-mask: url(../assets/svg/earnings.svg) no-repeat center;
+  mask: url(../assets/svg/earnings.svg) no-repeat center;
+}
+
+.svg-finance-claims {
+  -webkit-mask: url(../assets/svg/claim.svg) no-repeat center;
+  mask: url(../assets/svg/claim.svg) no-repeat center;
+}
+
+.svg-finance-final-settlement {
+  -webkit-mask: url(../assets/svg/Finance_Final_Settlement.svg) no-repeat center;
+  mask: url(../assets/svg/Finance_Final_Settlement.svg) no-repeat center;
 }
 
 page-home .grid {
