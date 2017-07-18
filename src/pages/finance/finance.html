@@ -1,44 +1,44 @@
 <ion-header>
 
     <ion-navbar>
-        <ion-title>Driver Care Department</ion-title>
+        <ion-title>Finance Department</ion-title>
     </ion-navbar>
     <ion-toolbar id="top-menu">
         <ion-segment class="regular slider">
             <ion-segment-button>
-                <div class="box box-active">
+                <div class="box" (click)="loadHrPage()">
+                    <div class="svg-icon svg-hr"></div>
+                    <p>HR</p>
+                </div>
+            </ion-segment-button>
+            <ion-segment-button>
+                <div class="box box-active" (click)="loadFinancePage()">
                     <div class="svg-icon svg-finance"></div>
                     <p>Finance</p>
                 </div>
             </ion-segment-button>
             <ion-segment-button>
-                <div class="box">
+                <div class="box" (click)="loadOperationsPage()">
                     <div class="svg-icon svg-operations"></div>
                     <p>Operations</p>
                 </div>
             </ion-segment-button>
             <ion-segment-button>
-                <div class="box">
+                <div class="box" (click)="loadTrainingPage()">
                     <div class="svg-icon svg-training"></div>
                     <p>Training</p>
                 </div>
             </ion-segment-button>
             <ion-segment-button>
-                <div class="box">
+                <div class="box" (click)="loadMeterPage()">
                     <div class="svg-icon svg-meter"></div>
                     <p>Meter</p>
                 </div>
             </ion-segment-button>
             <ion-segment-button>
-                <div class="box">
+                <div class="box" (click)="loadDriverCarePage()">
                     <div class="svg-icon svg-driver-care"></div>
                     <p>Diver Care</p>
-                </div>
-            </ion-segment-button>
-            <ion-segment-button>
-                <div class="box">
-                    <div class="svg-icon svg-hr"></div>
-                    <p>HR</p>
                 </div>
             </ion-segment-button>
         </ion-segment>
